@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+    font-size: 17px;
+    line-height: 1.5;
+}
+h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+main > article > h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #42b7ac;
+}
+.wrapper {
+    background-color: whitesmoke;
+}
+
+img {
+    border-radius: 7px;
+}
+
+/* Start aside menu*/
+aside {
+    color: floralwhite;
+    border-radius: 20px;
+    background: darkgrey;
+    padding: 10px 20px 10px 10px;
+    margin: 50px;
+    float: left;
+    position: sticky;
+    top: 100px;
+
+}
+.menu_link {
+    color: #ecd879;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.menu_link:hover {
+    color: #ee9f5d;
+}
+.menu_link:active {
+    color: #e7835a;
+}
+.menu_link:visited {
+    color: #8fe062;
+}
+/* End aside menu*/
+
+/* Start header */
+.header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+.header_inner{
+    display: flex;
+}
+.header_logo{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: floralwhite;
+    margin-left: 50px;
+    margin-right: 5px;
+
+}
+/* End header*/
+
+/* Start navigation */
+.nav{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-right: 50px;
+    padding-left: 50px ;
+}
+.nav_link{
+    margin: 0 20px;
+    color: floralwhite;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.nav_link:hover {
+    color: #e1c194;
+}
+/* End navigation */
+
+
+/* Start footer */
+.footer{
+    width: 100%;
+    background-color: darkgrey;
+
+}
+footer > h3{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+
+}
+address {
+    margin-left: 20%;
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+}
+
+/* End footer */
+
+/* Start blocks dividing */
+section, h1 {
+    border-radius: 40px;
+    background-color: white;
+    margin: 30px 20% 30px 25%;
+    padding: 20px 30px;
+}
+.block {
+    border-radius: 40px;
+    background-color: white;
+    margin: 30px 20% 30px 23%;
+    padding: 20px 70px;
+}
+/* End blocks dividing */
