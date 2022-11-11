@@ -58,10 +58,8 @@ aside {
     padding-top: 5px;
     padding-bottom: 5px;
 
+    display: inline-block;
     background-color: darkgrey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: sticky;
 }
 .header_inner{
@@ -74,26 +72,118 @@ aside {
     color: floralwhite;
     margin-left: 50px;
     margin-right: 5px;
-
 }
+
+#nav_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shcart {
+    width: 50px;
+    margin-left: -30px;
+    background-color: #ecd879;
+    box-shadow: 0px 0px 0px 3px #ecd879;
+}
+#shcart:hover {
+    box-shadow: 0px 0px 0px 5px #ecb379;
+}
+
+#account a {
+    color: gold;
+}
+
 /* End header*/
 
 /* Start navigation */
-.nav{
+/* задаем цвет фона для контейнера nav. */
+nav {
     font-size: 20px;
     text-transform: uppercase;
     padding-right: 50px;
     padding-left: 50px ;
+    margin: 0;
+    background-color: darkgrey;
 }
-.nav_link{
-    margin: 0 20px;
+
+/* убираем отступы и поля, а также list-style для "ul",
+ * и добавляем "position:relative" */
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+}
+
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+    margin: 0 10px 0 0;
+    display:inline-block;
+    background-color: darkgrey;
+}
+
+/* стилизуем ссылки */
+nav a {
+    font-size:20px;
+    display:block;
     color: floralwhite;
-    text-decoration: none;
-    transition: color .1s linear;
+    padding:0 10px;
+    border-radius: 5px;
+    line-height: 60px;
+    text-decoration:none;
 }
-.nav_link:hover {
+
+nav ul ul a {
+    border: 1px solid #2d2424;
+}
+
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
     color: #e1c194;
+    background-color: #3f3e39;
 }
+
+nav ul ul a:hover {
+    color: #e1c194;
+    background-color: #3f3e39;
+}
+
+/* скрываем выпадающие списки по умолчанию
+			 * и задаем абсолютное позиционирование */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    border-radius: 10px;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+    min-width:150px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* второй, третий и последующие уровни
+			 * смещаем 2 и 3 уровни влево
+			 * на значение длины первого уровня.
+			*/
+nav ul ul ul {
+    position: absolute;
+    top:0;
+    left:100%;
+}
+
+/* измените ' +' на любой другой символ, если нужно
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }*/
 /* End navigation */
 
 
