@@ -31,7 +31,9 @@ aside {
     float: left;
     position: sticky;
     top: 100px;
-
+}
+aside > ul {
+    list-style: square;
 }
 .menu_link {
     color: #ecd879;
