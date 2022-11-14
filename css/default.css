@@ -157,14 +157,14 @@ address {
 /* End footer */
 
 /* Start content */
-/*.wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
-}*/
+}
 .main {
     padding: 1em;
-    background: rgb(187, 179, 135);
+    background: whitesmoke;
     text-align: center;
 }
 .aside {

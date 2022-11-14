@@ -6,7 +6,7 @@ main > article > h1 {
     font-size: 35px;
     color: #42b7ac;
 }
-.wrapper {
+.wrapper_guide {
     background-color: whitesmoke;
     position: relative;
     height: 100%;
