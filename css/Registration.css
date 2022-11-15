@@ -1,0 +1,91 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.main div {
+    margin: 1em;
+}
+
+#reg_data {
+    border-radius: 40px;
+    background-color: white;
+    padding: 20px 70px;
+}
+
+form > p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+form > p > label {
+    min-width: 7.5em;
+    text-align: left;
+}
+
+button {
+    background-color: green; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 0.5em;
+}
+
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #41c047; /* Green */
+    color: white;
+}
+
+.text-field__label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+/* стили для input */
+.text-field__input {
+    margin-left: 10px;
+    display: block;
+    height: calc(2rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text-field__input::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+.login_label {
+}
+
+form {
+}
+
+#pc_logo {
+}
