@@ -6,7 +6,7 @@
   <title>EasyPC</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="css/default.css" type="text/css">
-  <link rel="stylesheet" href="css/login_style.css" type="text/css">
+  <link rel="stylesheet" href="css/LogIn.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500&display=swap" rel="stylesheet">
@@ -59,7 +59,7 @@
             </li>
           </ul>
         </li>
-        <li><a href="#">Гайд</a></li>
+        <li><a href="#PCguide">Гайд</a></li>
         <li><a href="#">Связаться</a></li>
       </ul>
     </nav>
@@ -79,8 +79,22 @@
 <div class="wrapper">
   <main class="main">
     <div id="login_label">
-      <img id="pc_logo" src="img/favicon.png" alt = "PC_Logo">
+      <img id="pc_logo" src="img/favicon_small.png" alt = "PC_Logo">
       <h1>Вход</h1>
+    </div>
+    <div id="login_data">
+      <form id="login_data_form" action="" method="get">
+        <p>
+          <label class="text-field__label" for="login">Логин:</label>
+          <input class="text-field__input" placeholder="Login" type="text" name="login" id="login" required>
+        </p>
+        <p>
+          <label class="text-field__label" for="password">Пароль:</label>
+          <input class="text-field__input" placeholder="Password" type="password" name="password" id="password" required>
+        </p>
+        <label><input type="checkbox" name="save">Сохранить</label>
+        <button type="submit">Отправить</button>
+      </form>
     </div>
 
   </main>
