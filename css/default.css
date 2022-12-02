@@ -199,7 +199,7 @@ address {
 }
 /* End content */
 
-
+/* Start burger-menu */
 @media (min-width: 981px) {
     .burger_div {
         visibility: hidden;
@@ -260,7 +260,9 @@ address {
     transition: transform 0.35s;
     z-index: 1;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #919191;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #000;
 }
 .burger_menu .m-menu__overlay {
     background-color: rgba(103, 103, 103, 0.5);
@@ -273,7 +275,7 @@ address {
 }
 .burger_menu .m-menu__header {
     padding: 0 16px;
-    height: 50px;
+    height: 66px;
     display: -ms-flexbox;
     display: -webkit-box;
     display: -webkit-flex;
@@ -283,7 +285,9 @@ address {
     -ms-flex-pack: space-around;
     -webkit-align-items: center;
     align-items: center;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 2px solid whitesmoke;
+    color: floralwhite;
+    background-color: #737373;
 }
 .burger_menu .m-menu__header span {
     font-size: 1.2rem;
@@ -308,7 +312,7 @@ address {
     padding: 0 15px;
     line-height: 47px;
     text-decoration: none;
-    color: #333;
+    color: white;
     cursor: pointer;
     font-size: 1rem;
     border-bottom: 1px solid #e8e8e8;
@@ -320,9 +324,9 @@ address {
     display: inline-block;
     height: 10px;
     width: 10px;
-    border-color: #333;
+    border-color: white;
     border-style: solid;
-    border-width: 1px 1px 0 0;
+    border-width: 2px 2px 0 0;
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -331,6 +335,11 @@ address {
     top: 50%;
     margin-top: -5px;
     right: 16px;
+}
+.burger_menu .m-menu ul li a, nav .m-menu ul li>label:hover {
+    color: #e1c194;
+    background-color: #3f3e39;
+    border-radius: 10px;
 }
 .burger_menu .m-menu ul li .-invisible {
     border-bottom: 0;
@@ -356,4 +365,7 @@ address {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
-
+.burger_menu .decorated-label {
+    border-radius: 10px;
+}
+/* End burger-menu */
