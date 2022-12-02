@@ -1,12 +1,8 @@
-h2, h3, h4, h5, h6 {
-    margin-top: 0;
-}
-main > article > h1 {
+main > article > section > h1 {
+    width: 100%;
     text-align: center;
     font-size: 34px;
     color: #42b7ac;
-}
-main > article > section {
 }
 .wrapper_guide {
     background-color: whitesmoke;
@@ -42,6 +38,11 @@ aside > ul {
 }
 .menu_link:visited {
     color: #8fe062;
+}
+@media (max-width: 980px) {
+    aside {
+        display: none;
+    }
 }
 /* End aside menu*/
 
