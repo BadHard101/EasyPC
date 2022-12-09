@@ -2,9 +2,6 @@ var min_range = document.querySelector('#Min_cost');
 var max_range = document.querySelector('#Max_cost');
 var manufacture = document.querySelector('#Manufacturer_form');
 
-for (let i=1; i<8; i++) {
-
-}
 
 min_range.addEventListener('change', function () {
     let cards = document.querySelectorAll('.product_card');
@@ -65,51 +62,8 @@ const findServices = (filters) => {
         );
     }
 
+
     /*document.querySelector('#selected').innerHTML = answer.map(item => `<p>${item.id}</p>`).join('');*/
-
-
-
-
-    let cards = document.querySelectorAll('.product_card');
-    cards.forEach(element => {
-
-
-        for (let i = 0; i < answer.length; i++) {
-            //console.log(answer.at(i));
-
-            let cur_index = answer.at(i).id;
-
-
-            console.log("Elm: " + element.id);
-            console.log("Index: " + cur_index);
-
-
-            if (++element.id >= ++cur_index && element.id === cur_index) {
-                element.classList.remove('hidden');
-
-            } else {
-                element.classList.add('hidden');
-            }
-
-            /*if (answer.find(element.id)) {
-                element.classList.remove('hidden');
-            }
-            else {
-                element.classList.add('hidden');
-            }
-
-            for (let i = 0; i < answer.length; i++) {
-                console.log(answer.at(i).id);
-
-                /!*if (element.id != answer.at(i).id) {
-                    console.log("YES");
-                    element.classList.add('hidden');
-                } else {
-                    element.classList.remove('hidden');
-                }*!/
-            }*/
-        }
-    });
 
     /*obs.push(answer.map(item => `${item.id}`).join(''));
     for (let i = 0; i < obs.length; i++) {
@@ -148,8 +102,23 @@ checkboxes.forEach(checkbox => {
 
         filters[prop][target.checked ? 'add' : 'delete']('' + value);
 
-        findServices(filters);
+        let answer = findServices(filters);
+        let answer_ids = []
+        for (let i = 0; i < answer.length; i++) {
+            answer_ids.push(answer.at(i).id);
+            console.log(answer_ids.at(i));
+        }
+        let cards = document.querySelectorAll('.product_card');
+        cards.forEach(element => {
+            if (answer_ids.indexOf(element.id)>-1) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        });
     })
 });
 
-document.onload = findServices(filters);
+/*document.onload = findServices(filters);*/
+
+
