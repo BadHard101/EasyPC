@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>EasyPC</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/default.css" type="text/css">
+  <link rel="stylesheet" href="css/ShopRAM.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class = "header">
+  <div class="burger_div">
+    <nav class="burger_menu">
+      <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+      <label class="m-menu__toggle" for="menu">
+        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </label>
+      <label class="m-menu__overlay" for="menu"></label>
+
+      <div class="m-menu">
+        <div class="m-menu__header">
+          <label class="m-menu__toggle" for="menu">
+            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </label>
+          <span>МЕНЮ</span>
+        </div>
+        <ul>
+          <li><label>Главная</label></li>
+          <li>
+            <label class="a-label__chevron" for="item-2">Магазин</label>
+            <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+            <div class="m-menu">
+              <div class="m-menu__header">
+                <label class="m-menu__toggle" for="item-2">
+                  <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                    <path d="M19 12H6M12 5l-7 7 7 7"/>
+                  </svg>
+                </label>
+                <span>Магазин</span>
+              </div>
+              <ul>
+                <li>
+                  <label class="a-label__chevron" for="item-2-1">Процессоры</label>
+                  <input type="checkbox" id="item-2-1" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-1">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Процессоры</span>
+                    </div>
+                    <ul>
+                      <li><label class="decorated-label" style="background-color: dodgerblue">Intel-процессоры</label></li>
+                      <li><label class="decorated-label" style="background-color: #ad0000">AMD-процессоры</label></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <label class="a-label__chevron" for="item-2-2">Материнские платы</label>
+                  <input type="checkbox" id="item-2-2" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-2">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Материнские платы</span>
+                    </div>
+                    <ul>
+                      <li><label class="decorated-label" style="background-color: dodgerblue">Intel-сокет</label></li>
+                      <li><label class="decorated-label" style="background-color: #ad0000">AMD-сокет</label></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><label>Оперативная память</label></li>
+                <li>
+                  <label class="a-label__chevron" for="item-2-4">Диски</label>
+                  <input type="checkbox" id="item-2-4" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-4">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Диски</span>
+                    </div>
+                    <ul>
+                      <li><label>SSD диски</label></li>
+                      <li><label>HDD диски</label></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <label class="a-label__chevron" for="item-2-5">Корпус</label>
+                  <input type="checkbox" id="item-2-5" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-5">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Корпус</span>
+                    </div>
+                    <ul>
+                      <li><label>Корпуса</label></li>
+                      <li><label>Кулеры</label></li>
+                      <li><label>Водяное охлаждение</label></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><label>Блоки питания</label></li>
+                <li>
+                  <label class="a-label__chevron" for="item-2-6">Видеокарты</label>
+                  <input type="checkbox" id="item-2-6" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-6">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Видеокарты</span>
+                    </div>
+                    <ul>
+                      <li><label class="decorated-label" style="background-color: #ad0000">AMD-видеокарты</label></li>
+                      <li><label class="decorated-label" style="background-color: #1e7c1e">NVIDEA-видеокарты</label></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><label>Гайд</label></li>
+          <li><label>Связаться</label></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="nav_menu">
+    <div class="header_inner">
+      <div class="header_logo">EasyPC</div>
+      <img src="img/favicon.png" alt = "PC_Logo" width="50px">
+    </div>
+    <nav id="nav_buttons">
+      <ul>
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#shop">Магазин</a>
+          <ul>
+            <li><a href="#">Процессоры</a>
+              <ul>
+                <li><a style="background-color: #ad0000" href="#">AMD</a></li>
+                <li><a style="background-color: dodgerblue" href="#">Intel</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Материнские платы</a>
+              <ul>
+                <li><a style="background-color: #ad0000" href="#">AMD-сокет</a></li>
+                <li><a style="background-color: dodgerblue" href="#">Intel-сокет</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Оперативная память</a></li>
+            <li><a href="#">Диски</a>
+              <ul>
+                <li><a href="#">SSD диски</a></li>
+                <li><a href="#">HDD диски</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Корпус</a>
+              <ul>
+                <li><a href="#">Корпуса</a></li>
+                <li><a href="#">Кулеры</a></li>
+                <li><a href="#">Водянки</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Блоки питания</a></li>
+            <li><a href="#">Видеокарты</a>
+              <ul>
+                <li><a style="background-color: #ad0000" href="#">AMD</a></li>
+                <li><a style="background-color: #1e7c1e" href="#">NVIDEA</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#PCguide">Гайд</a></li>
+        <li><a href="#">Связаться</a></li>
+      </ul>
+    </nav>
+    <nav id="account">
+      <ul>
+        <li><a href="#">Войти</a>
+          <ul>
+            <li><a href="#">Регистрация</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <img id="shcart" src="img/shcart.png" alt = "PC_Logo" >
+  </div>
+</header>
+
+<div class="wrapper">
+  <main class="main">
+    <h1>Оперативная память (RAM)</h1>
+    <div class="container">
+
+      <div class="filters">
+        <div class="filter f1">
+          <h3>Цена</h3>
+          <div class="Cost_filter">
+            <form id="cost_form" action="" method="">
+              <p>
+                <input class="text-field__input" placeholder="От 50" type="text" name="Min_cost" id="Min_cost">
+              </p>
+              <p>
+                <input class="text-field__input" placeholder="До 100000" type="text" name="Max_cost" id="Max_cost">
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <div class="filter f2">
+          <h3>Производитель</h3>
+          <div class="Manufacturer_filter">
+            <form id="Manufacturer_form" action="" method="">
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="M1" name="color-1" value="AMD">
+                <label for="M1">AMD</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="M2" name="color-2" value="Corsair">
+                <label for="M2">Corsair</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="M3" name="color-3" value="GIGABYTE" disabled="disabled">
+                <label for="M3">GIGABYTE</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="M4" name="color-4" value="HyperX">
+                <label for="M4">HyperX</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="M5" name="color-5" value="Kingston">
+                <label for="M5">Kingston</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="M8" name="color-8" value="Patriot Memory">
+                <label for="M8">Patriot Memory</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="M6" name="color-6" value="Samsung">
+                <label for="M6">Samsung</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="M7" name="color-7" value="Transcend">
+                <label for="M7">Transcend</label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="filter f3">
+          <h3>Тип</h3>
+          <div class="Type_filter">
+            <form id="Type_form" action="" method="">
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="T1" name="T1" value="DDR" disabled="disabled">
+                <label for="T1">DDR</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="T2" name="T2" value="DDR2" disabled="disabled">
+                <label for="T2">DDR2</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="T3" name="T3" value="DDR3">
+                <label for="T3">DDR3</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="T4" name="T4" value="DDR3L" disabled="disabled">
+                <label for="T4">DDR3L</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="T5" name="T5" value="DDR4">
+                <label for="T5">DDR4</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="T6" name="T6" value="DDR5">
+                <label for="T6">DDR5</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="T7" name="T7" value="RDRAM" disabled="disabled">
+                <label for="T7">RDRAM</label>
+              </div>
+              <div class="checkbox">
+                <input class="custom-checkbox" type="checkbox" id="T8" name="T8" value="SDRAM" disabled="disabled">
+                <label for="T8">SDRAM</label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="products">
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/1.jpg" alt="product image">
+          </div>
+          <h3>Оперативная память HyperX Fury RGB 8 ГБ DDR4 3600 МГц DIMM CL17 HX436C17FB3A/8</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 1 шт.</p>
+            <p>объем одного модуля: 8 ГБ</p>
+            <p>тип: DDR4 DIMM 288-pin</p>
+            <p>тактовая частота: 3600 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">4799₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/2.jpg" alt="product image">
+          </div>
+          <h3>Оперативная память Kingston 32 Gb DIMM DDR4 3600 MHz FURY Beast Black Gaming (KF436C18BBK2/32)</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 2 шт.</p>
+            <p>объем одного модуля: 16 ГБ</p>
+            <p>тип: DDR4</p>
+            <p>тактовая частота: 3600 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">10887₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/3.jpg" alt="product image">
+          </div>
+
+          <h3>Оперативная память HyperX Fury 8 ГБ DDR3 1600 МГц DIMM CL10 HX316C10F/8</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 1 шт.</p>
+            <p>объем одного модуля: 8 ГБ</p>
+            <p>тип: DDR3 DIMM 240-pin</p>
+            <p>тактовая частота: 1600 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">3358₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/4.jpg" alt="product image">
+          </div>
+          <h3>Оперативная память Samsung 8 ГБ DDR4 3200 МГц SODIMM CL22 M471A1K43DB1-CWE</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 1 шт.</p>
+            <p>объем одного модуля: 8 ГБ</p>
+            <p>тип: DDR4 SODIMM 260-pin</p>
+            <p>тактовая частота: 3200 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">2460₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/5.jpg" alt="product image">
+          </div>
+          <h3>Оперативная память AMD Radeon R9 Gaming Series 32 ГБ (16 ГБ x 2 шт.) DDR4 3600 МГц DIMM CL18 R9S432G3606U2K</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 2 шт.</p>
+            <p>объем одного модуля: 16 ГБ</p>
+            <p>тип: DDR4 DIMM 288-pin</p>
+            <p>тактовая частота: 3600 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">15191₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/6.jpg" alt="product image">
+          </div>
+          <h3>Оперативная память Corsair Vengeance RGB PRO 32 ГБ (16 ГБ x 2 шт.) DDR4 3200 МГц DIMM CL16 CMH32GX4M2E3200C16</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 2 шт.</p>
+            <p>объем одного модуля: 16 ГБ</p>
+            <p>тип: DDR4 DIMM 288-pin</p>
+            <p>тактовая частота: 3200 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">9810₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/7.jpg" alt="product image">
+          </div>
+          <h3>Оперативная память Corsair Dominator Platinum RGB 32 ГБ (16 ГБ x 2 шт.) DDR5 6200 МГц DIMM CL36 DOMINATOR PLATINUM RGB 32GB (2x16GB) DDR5 DRAM 6200MHz C36 Memory Kit Black</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 2 шт.</p>
+            <p>объем одного модуля: 16 ГБ</p>
+            <p>тип: DDR5 DIMM 288-pin</p>
+            <p>тактовая частота: 6200 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">36059₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/8.jpg" alt="product image">
+          </div>
+          <h3>Оперативная память Transcend JetRam 8 ГБ DDR4 3200 МГц SODIMM CL22 JM3200HSB-8G</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 1 шт.</p>
+            <p>объем одного модуля: 8 ГБ</p>
+            <p>тип: DDR4 SODIMM 260-pin</p>
+            <p>тактовая частота: 3200 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">1720₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/9.jpg" alt="product image">
+          </div>
+          <h3>Оперативная память Transcend 8 ГБ DDR4 2666 МГц SODIMM CL19 JM2666HSB-8G</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 1 шт.</p>
+            <p>объем одного модуля: 8 ГБ</p>
+            <p>тип: DDR4 SODIMM 260-pin</p>
+            <p>тактовая частота: 2666 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">1921₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/10.jpg" alt="product image">
+          </div>
+          <h3>Оперативная память Patriot Memory VIPER 3 16 ГБ (8 ГБ x 2 шт.) DDR3 1600 МГц DIMM CL10 PV316G160C0K</h3>
+          <div class="card_description">
+            <p>модулей в комплекте: 2 шт.</p>
+            <p>объем одного модуля: 8 ГБ</p>
+            <p>тип: DDR3 DIMM 240-pin</p>
+            <p>тактовая частота: 1600 МГц</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">4136₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="product_card">
+          <div class="img_container">
+            <img src="img_RAM/1.jpg" alt="product image">
+          </div>
+          <h3>RAM</h3>
+          <div class="card_description">
+            <p>filter1</p>
+            <p>filter2</p>
+            <p>filter3</p>
+            <p>filter3</p>
+          </div>
+          <div class="card_buttons">
+            <label class="cost_label">₽</label>
+            <button class="card_button btn_cart">В корзину</button>
+          </div>
+        </div>
+
+
+
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="contacts">
+    <address>
+      <ul>
+        <p>Contact to me:</p>
+        <li><a href="tel:+79161192555"
+               target="_blank">Телефон: +7 (916) 119-25-55</a></li>
+        <li><a href="mailto:badhard101@yandex.ru"
+               target="_blank">Почта: badhard101@yandex.ru</a></li>
+        <li><a href="https://github.com/BadHard101"
+               target="_blank">GitHub: BadHard101 </a></li>
+      </ul>
+    </address>
+  </div>
+</footer>
+</body>
+</html>

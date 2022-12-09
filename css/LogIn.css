@@ -69,11 +69,15 @@ button:hover {
     opacity: 0.4;
 }
 
-.login_label {
-}
-
-form {
-}
-
-#pc_logo {
+@media (max-width: 1000px) {
+    .main {
+        flex-direction: column;
+    }
+    .main div {
+        margin: 1em;
+    }
+    .main div img {
+        margin-top: -8em;
+        visibility: hidden;
+    }
 }
