@@ -26,11 +26,12 @@ body {
     position: sticky;
     justify-content: center;
 }
-.header_inner{
+.header_inner a{
     display: flex;
     text-align: center;
     align-content: center;
     align-items: center;
+    text-decoration: none;
 }
 .header_logo{
     font-family: 'Noto Sans', sans-serif;
@@ -475,7 +476,7 @@ address {
     margin-top: -5px;
     right: 16px;
 }
-.burger_menu .m-menu ul li a, nav .m-menu ul li>label:hover {
+.burger_menu .m-menu ul li a:hover, nav .m-menu ul li>label:hover {
     color: #e1c194;
     background-color: #3f3e39;
     border-radius: 10px;

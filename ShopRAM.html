@@ -33,7 +33,7 @@
           <span>МЕНЮ</span>
         </div>
         <ul>
-          <li><label>Главная</label></li>
+          <li><a href="./Home.html">Главная</a></li>
           <li>
             <label class="a-label__chevron" for="item-2">Магазин</label>
             <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
@@ -60,8 +60,8 @@
                       <span>Процессоры</span>
                     </div>
                     <ul>
-                      <li><label class="decorated-label" style="background-color: dodgerblue">Intel-процессоры</label></li>
-                      <li><label class="decorated-label" style="background-color: #ad0000">AMD-процессоры</label></li>
+                      <li><a href="./ShopProcessorsIntel.html" class="decorated-label" style="background-color: dodgerblue">Intel-процессоры</a></li>
+                      <li><a href="./ShopProcessorsAmd.html" class="decorated-label" style="background-color: #ad0000">AMD-процессоры</a></li>
                     </ul>
                   </div>
                 </li>
@@ -78,12 +78,12 @@
                       <span>Материнские платы</span>
                     </div>
                     <ul>
-                      <li><label class="decorated-label" style="background-color: dodgerblue">Intel-сокет</label></li>
-                      <li><label class="decorated-label" style="background-color: #ad0000">AMD-сокет</label></li>
+                      <li><a href="./ShopMotherboardsIntel.html" class="decorated-label" style="background-color: dodgerblue">Intel-сокет</a></li>
+                      <li><a href="./ShopMotherboardsAmd.html" class="decorated-label" style="background-color: #ad0000">AMD-сокет</a></li>
                     </ul>
                   </div>
                 </li>
-                <li><label>Оперативная память</label></li>
+                <li><a href="./ShopRAM.html">Оперативная память</a></li>
                 <li>
                   <label class="a-label__chevron" for="item-2-4">Диски</label>
                   <input type="checkbox" id="item-2-4" name="item-2" class="m-menu__checkbox">
@@ -97,8 +97,8 @@
                       <span>Диски</span>
                     </div>
                     <ul>
-                      <li><label>SSD диски</label></li>
-                      <li><label>HDD диски</label></li>
+                      <li><a href="./ShopDiscsSSD.html">SSD диски</a></li>
+                      <li><a href="./ShopDiscsHDD.html">HDD диски</a></li>
                     </ul>
                   </div>
                 </li>
@@ -115,13 +115,13 @@
                       <span>Корпус</span>
                     </div>
                     <ul>
-                      <li><label>Корпуса</label></li>
-                      <li><label>Кулеры</label></li>
-                      <li><label>Водяное охлаждение</label></li>
+                      <li><a href="./ShopCases.html">Корпуса</a></li>
+                      <li><a href="./ShopCoolers.html">Кулеры</a></li>
+                      <li><a href="./ShopWatercoolers.html">Водяное охлаждение</a></li>
                     </ul>
                   </div>
                 </li>
-                <li><label>Блоки питания</label></li>
+                <li><a href="./ShopPowersupplies.html">Блоки питания</a></li>
                 <li>
                   <label class="a-label__chevron" for="item-2-6">Видеокарты</label>
                   <input type="checkbox" id="item-2-6" name="item-2" class="m-menu__checkbox">
@@ -135,79 +135,84 @@
                       <span>Видеокарты</span>
                     </div>
                     <ul>
-                      <li><label class="decorated-label" style="background-color: #ad0000">AMD-видеокарты</label></li>
-                      <li><label class="decorated-label" style="background-color: #1e7c1e">NVIDEA-видеокарты</label></li>
+                      <li><a href="./ShopVideocardsAMD.html" class="decorated-label" style="background-color: #ad0000">AMD-видеокарты</a></li>
+                      <li><a href="./ShopVideocardsNVIDEA.html" class="decorated-label" style="background-color: #1e7c1e">NVIDEA-видеокарты</a></li>
                     </ul>
                   </div>
                 </li>
               </ul>
             </div>
           </li>
-          <li><label>Гайд</label></li>
-          <li><label>Связаться</label></li>
+          <li><a href="./PCguide.html">Гайд</a></li>
+          <li><a href="./Contacts.html">Связаться</a></li>
+          <br><br>
+          <li><a href="./LogIn.html">Войти</a></li>
+          <li><a href="./Registration.html">Зарегистрироваться</a></li>
         </ul>
       </div>
     </nav>
   </div>
   <div id="nav_menu">
     <div class="header_inner">
-      <div class="header_logo">EasyPC</div>
-      <img src="img/favicon.png" alt = "PC_Logo" width="50px">
+      <a href="./Home.html">
+        <div class="header_logo">EasyPC</div>
+        <img src="img/favicon.png" alt = "PC_Logo" width="50px">
+      </a>
     </div>
     <nav id="nav_buttons">
       <ul>
-        <li><a href="#home">Главная</a></li>
-        <li><a href="#shop">Магазин</a>
+        <li><a href="./Home.html">Главная</a></li>
+        <li><a href="">Магазин</a>
           <ul>
-            <li><a href="#">Процессоры</a>
+            <li><a href="">Процессоры</a>
               <ul>
-                <li><a style="background-color: #ad0000" href="#">AMD</a></li>
-                <li><a style="background-color: dodgerblue" href="#">Intel</a></li>
+                <li><a style="background-color: #ad0000" href="./ShopProcessorsAmd.html">AMD</a></li>
+                <li><a style="background-color: dodgerblue" href="./ShopProcessorsAmd.html">Intel</a></li>
               </ul>
             </li>
-            <li><a href="#">Материнские платы</a>
+            <li><a href="">Материнские платы</a>
               <ul>
-                <li><a style="background-color: #ad0000" href="#">AMD-сокет</a></li>
-                <li><a style="background-color: dodgerblue" href="#">Intel-сокет</a></li>
+                <li><a style="background-color: #ad0000" href="./ShopMotherboardsAmd.html">AMD-сокет</a></li>
+                <li><a style="background-color: dodgerblue" href="./ShopMotherboardsIntel.html">Intel-сокет</a></li>
               </ul>
             </li>
-            <li><a href="#">Оперативная память</a></li>
-            <li><a href="#">Диски</a>
+            <li><a href="./ShopRAM.html">Оперативная память</a></li>
+            <li><a href="">Диски</a>
               <ul>
-                <li><a href="#">SSD диски</a></li>
-                <li><a href="#">HDD диски</a></li>
+                <li><a href="./ShopDiscsSSD.html">SSD диски</a></li>
+                <li><a href="./ShopDiscsHDD.html">HDD диски</a></li>
               </ul>
             </li>
-            <li><a href="#">Корпус</a>
+            <li><a href="">Корпус</a>
               <ul>
-                <li><a href="#">Корпуса</a></li>
-                <li><a href="#">Кулеры</a></li>
-                <li><a href="#">Водянки</a></li>
+                <li><a href="./ShopCases.html">Корпуса</a></li>
+                <li><a href="./ShopCoolers.html">Кулеры</a></li>
+                <li><a href="./ShopWatercoolers.html">Водянки</a></li>
               </ul>
             </li>
-            <li><a href="#">Блоки питания</a></li>
-            <li><a href="#">Видеокарты</a>
+            <li><a href="./ShopPowersupplies.html">Блоки питания</a></li>
+            <li><a href="">Видеокарты</a>
               <ul>
-                <li><a style="background-color: #ad0000" href="#">AMD</a></li>
-                <li><a style="background-color: #1e7c1e" href="#">NVIDEA</a></li>
+                <li><a style="background-color: #ad0000" href="./ShopVideocardsAMD.html">AMD</a></li>
+                <li><a style="background-color: #1e7c1e" href="./ShopVideocardsNVIDEA.html">NVIDEA</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a href="#PCguide">Гайд</a></li>
-        <li><a href="#">Связаться</a></li>
+        <li><a href="./PCguide.html">Гайд</a></li>
+        <li><a href="./Contacts.html">Связаться</a></li>
       </ul>
     </nav>
     <nav id="account">
       <ul>
-        <li><a href="#">Войти</a>
+        <li><a href="./LogIn.html">Войти</a>
           <ul>
-            <li><a href="#">Регистрация</a></li>
+            <li><a href="./Registration.html">Регистрация</a></li>
           </ul>
         </li>
       </ul>
     </nav>
-    <img id="shcart" src="img/shcart.png" alt = "PC_Logo" >
+    <img id="shcart" src="img/shcart.png" alt="PC_Logo">
   </div>
 </header>
 
@@ -222,10 +227,10 @@
           <div class="Cost_filter">
             <form id="cost_form" action="" method="">
               <p>
-                <input class="text-field__input" placeholder="От 50" type="text" name="Min_cost" id="Min_cost">
+                <input class="text-field__input" placeholder="От 50" type="text" name="Min_cost" id="Min_cost" value="0">
               </p>
               <p>
-                <input class="text-field__input" placeholder="До 100000" type="text" name="Max_cost" id="Max_cost">
+                <input class="text-field__input" placeholder="До 100000" type="text" name="Max_cost" id="Max_cost" value="100000">
               </p>
             </form>
           </div>
