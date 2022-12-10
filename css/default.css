@@ -14,6 +14,7 @@ body {
 /* Start header */
 .header{
     width: 100%;
+    min-height: 4em;
     top: 0;
     left: 0;
     right: 0;
@@ -25,6 +26,9 @@ body {
     background-color: darkgrey;
     position: sticky;
     justify-content: center;
+}
+.header_inner {
+    margin: 0 1em;
 }
 .header_inner a{
     display: flex;
@@ -38,8 +42,9 @@ body {
     font-size: 30px;
     font-weight: 700;
     color: floralwhite;
-    margin-left: 50px;
-    margin-right: 5px;
+    margin: 1%;
+    /*margin-left: 50px;
+    margin-right: 5px;*/
 }
 
 #nav_menu {
@@ -348,6 +353,9 @@ address {
 }
 @media (max-width: 980px) {
     #nav_buttons {
+        display: none;
+    }
+    #nav_account {
         display: none;
     }
     .header_inner {
