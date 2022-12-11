@@ -39,7 +39,7 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-#cost_form > p {
+.integer_form > p {
     margin: 2% 0;
 }
 
