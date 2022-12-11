@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 70px;
 }
 
-button {
+.LogIn_btn {
     margin-left: 1em;
     background-color: green; /* Green */
     border: none;
@@ -32,12 +32,12 @@ button {
     border-radius: 10px;
 }
 
-button {
+.LogIn_btn {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 
-button:hover {
+.LogIn_btn:hover {
     background-color: #41c047; /* Green */
     color: white;
 }

@@ -29,7 +29,7 @@ form > p > label {
     text-align: left;
 }
 
-button {
+.Reg_btn {
     background-color: green; /* Green */
     border: none;
     color: white;
@@ -42,12 +42,12 @@ button {
     margin: 0.5em;
 }
 
-button {
+.Reg_btn {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 
-button:hover {
+.Reg_btn:hover {
     background-color: #41c047; /* Green */
     color: white;
 }
