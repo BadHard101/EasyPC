@@ -99,6 +99,7 @@ const findServices = (filters) => {
     return answer;
 }
 
+
 //при загрузке страницы образуем массив answer
 document.onload = findServices(filters);
 
@@ -116,7 +117,44 @@ function generate_ids() {
 // (чтобы отображались все товары по стартовым фильтрам при открытии страницы)
 generate_ids();
 
+/* старт УБИРАЕМ ФИЛЬТРЫ ТОВАРОВ, КОТОРЫХ НЕТ В НАЛИЧИИ */
+function check_disabled_types() {
+    Type_checkboxes.forEach(checkbox => {
+        let checkbox_type = checkbox.id.split("-").at(1); //тип фильтра текущего товара
+        let checkbox_type_flag = false; //флаг на наличие товаров с фильтром
+        answer.forEach(element => {
+            if (checkbox_type_flag === true) //если уже существует хотя бы один товар с таким фильтром, то скипаем перебор всех остальных товаров
+                return;
+            if (element.Type === checkbox_type) { //если есть товар в списке с таким фильтром, то помечаем это
+                checkbox_type_flag = true;
+                console.log(element.Type);
+                console.log(element.Type === checkbox_type);
+            }
+        });
+        checkbox.disabled = checkbox_type_flag === false;
+    });
+}
 
+function check_disabled_manufactures() {
+    Manufacture_checkboxes.forEach(checkbox => {
+        let manufacture_type = checkbox.id.split("-").at(1); //тип фильтра текущего товара
+        let manufacture_type_flag = false; //флаг на наличие товаров с фильтром
+        answer.forEach(element => {
+            if (manufacture_type_flag === true) //если уже существует хотя бы один товар с таким фильтром, то скипаем перебор всех остальных товаров
+                return;
+            if (element.Manufacture === manufacture_type) { //если есть товар в списке с таким фильтром, то помечаем это
+                manufacture_type_flag = true;
+                console.log(element.Manufacture);
+                console.log(element.Manufacture === manufacture_type);
+            }
+        });
+        checkbox.disabled = manufacture_type_flag === false;
+    });
+}
+
+check_disabled_types();
+check_disabled_manufactures();
+/* конец УБИРАЕМ ФИЛЬТРЫ ТОВАРОВ, КОТОРЫХ НЕТ В НАЛИЧИИ */
 
 
 
