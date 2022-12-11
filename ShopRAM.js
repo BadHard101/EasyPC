@@ -65,9 +65,12 @@ var min_range = document.querySelector('#Min_cost');
 var max_range = document.querySelector('#Max_cost');
 
 // для фильтра по производителю
-var manufacture = document.querySelector('#Manufacturer_form');
 const Manufacture_checkboxes = document.querySelectorAll('.Manufacturer_filter [type="checkbox"]');
+// по типу
 const Type_checkboxes = document.querySelectorAll('.Type_filter [type="checkbox"]');
+
+// сообщение пользователю, о том что нет таких товаров в наличии
+var No_prods = document.querySelector('#no_prods');
 
 /* старт ЛОВИМ ПОЛЯ ФИЛЬТРОВ СТРАНИЦЫ */
 
@@ -238,6 +241,11 @@ Manufacture_checkboxes.forEach(checkbox => {
                 element.classList.add('hidden');
             }
         });
+
+        //если нет таких товаров, то выводим сообщение об этом
+        console.log(answer.length);
+        if (answer.length === 0) No_prods.style.display = "flex";
+        else No_prods.style.display = "none";
     })
 });
 
@@ -262,6 +270,11 @@ Type_checkboxes.forEach(checkbox => {
                 element.classList.add('hidden');
             }
         });
+
+        //если нет таких товаров, то выводим сообщение об этом
+        console.log(answer.length);
+        if (answer.length === 0) No_prods.style.display = "flex";
+        else No_prods.style.display = "none";
     })
 });
 
