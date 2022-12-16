@@ -210,6 +210,20 @@
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 650px) {
+    .products {
+        grid-template-columns: 1fr;
+        border-top: 1px solid black;
+        margin-top: 1em;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .filters {
+        margin-left: 15%;
+        border-right: none;
+    }
+}
 
 #no_prods {
     padding: 5%;
