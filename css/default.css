@@ -48,6 +48,10 @@ body {
     margin-right: 5px;*/
 }
 
+#PC_Logo_Header {
+    width: 50px;
+}
+
 #nav_menu {
     display: flex;
     align-items: center;
