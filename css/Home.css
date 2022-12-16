@@ -1,5 +1,6 @@
 .main {
     background: #373749;
+    width: inherit;
 }
 
 .Home_Container {
@@ -8,6 +9,7 @@
     align-items: center;
 }
 .Home_Gif > img {
+    width: 100%;
     border-radius: 20px;
     box-shadow: 0 0 10px black;
 }
@@ -16,8 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 10.5rem;
     color: whitesmoke;
+    padding: 0 20%;
 }
 .card-title {
     margin-top: 0;
@@ -41,7 +43,7 @@ a {
     z-index: 2;
     position: absolute;
     margin: 1rem;
-    width: 400px;
+    width: 35%;
     height: auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -54,113 +56,141 @@ a {
     border-radius: 5px;
     box-shadow:  -10px 5px 20px hsla(0,100%,50%,.7),
     10px 5px 20px hsla(225, 100%, 50%, 0.7);
-
-    /*filter: drop-shadow(0 0 15px red);*/
-
-
     transition: 0.5s;
 
     width: 150px;
-    height: 300px;
+    height: 350px;
     -webkit-transform: skew(20deg);
     -moz-transform: skew(20deg);
     -o-transform: skew(20deg);
     background-image: linear-gradient(90deg, red, blue);
-
-    /*animation: circle-to-square1;
-    animation-duration: 0.5s;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in;
-    animation-fill-mode: backwards;*/
 }
 .back1 {
-    z-index: 1;
-    position: relative;
-    border-radius: 5px;
     box-shadow:  -10px 5px 20px hsla(52, 100%, 50%, 0.7),
     10px 5px 20px hsla(225, 100%, 50%, 0.7);
-
-
-    transition: 0.5s;
-
-    width: 150px;
-    height: 300px;
-    -webkit-transform: skew(20deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
     background-image: linear-gradient(90deg, yellow, blue);
 }
 .back2 {
-    z-index: 1;
-    position: relative;
-    border-radius: 5px;
     box-shadow:  -10px 5px 20px hsla(52, 100%, 50%, 0.7),
     10px 5px 20px hsla(120, 100%, 50%, 0.7);
-
-
-    transition: 0.5s;
-
-    width: 150px;
-    height: 300px;
-    -webkit-transform: skew(20deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
     background-image: linear-gradient(90deg, yellow, green);
 }
 .back3 {
-    z-index: 1;
-    position: relative;
-    border-radius: 5px;
     box-shadow:  -10px 5px 20px hsla(0, 0%, 1%, 0.7),
     10px 5px 20px hsla(120, 17%, 98%, 0.7);
-
-
-    transition: 0.5s;
-
-    width: 150px;
-    height: 300px;
-    -webkit-transform: skew(20deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
     background-image: linear-gradient(90deg, #000000, #ffffff);
 }
 .front:hover ~ .back{
     transition: 0.5s;
-
-    width: 150px;
-    height: 300px;
     -webkit-transform: skew(0deg);
     -moz-transform: skew(0deg);
     -o-transform: skew(0deg);
     background-image: linear-gradient(90deg, red, blue);
 }
 .front:hover ~ .back1{
-    transition: 0.5s;
-
-    width: 150px;
-    height: 300px;
-    -webkit-transform: skew(0deg);
-    -moz-transform: skew(0deg);
-    -o-transform: skew(0deg);
     background-image: linear-gradient(90deg, yellow, blue);
 }
 .front:hover ~ .back2{
-    transition: 0.5s;
-
-    width: 150px;
-    height: 300px;
-    -webkit-transform: skew(0deg);
-    -moz-transform: skew(0deg);
-    -o-transform: skew(0deg);
     background-image: linear-gradient(90deg, yellow, green);
 }
 .front:hover ~ .back3{
-    transition: 0.5s;
-
-    width: 150px;
-    height: 300px;
-    -webkit-transform: skew(0deg);
-    -moz-transform: skew(0deg);
-    -o-transform: skew(0deg);
     background-image: linear-gradient(90deg, black, white);
+}
+
+.gallery {
+    grid-area: gallery;
+    box-sizing: border-box;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.7em;
+}
+
+@media (max-width: 980px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .Home_Gif {
+        position: absolute;
+    }
+    .front {
+        width: 70%;
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.item > p {
+    margin-top: 1em;
+}
+.i1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.i1 > img {
+    width: 20%;
+}
+.i2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.i2 > img {
+    width: 40%;
+}
+.i3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.i3 > img {
+    width: 40%;
+}
+.i4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.i4 > img {
+    width: 50%;
+}
+.i5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.i5 > img {
+    width: 40%;
+}
+.i6 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.i6 > img {
+    width: 40%;
+}
+.i7 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.i7 > img {
+    width: 10%;
 }
