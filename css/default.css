@@ -186,6 +186,7 @@ li > a:only-child:after { content: ''; }*/
     margin: 0 0 5px 0;
 }
 .footer address {
+    font-style: normal;
     white-space: nowrap;
     justify-content: center;
 }
@@ -193,7 +194,7 @@ li > a:only-child:after { content: ''; }*/
     text-shadow: 1px 2px rgba(128, 128, 128, 0.76);
 }
 .footer a {
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 3px black;
     color: rgb(255, 220, 165);
 }
 
