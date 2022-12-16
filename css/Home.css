@@ -3,6 +3,7 @@
     background: rgb(64,64,84);
     background: linear-gradient(326deg, rgba(64,64,84,1) 0%, rgba(34,23,78,1) 100%);
     width: inherit;
+    text-shadow: 1px 1px 3px black;
 }
 
 .Home_Container {
@@ -34,9 +35,10 @@
 }
 p, a {
     font-size: 1rem;
+    text-shadow: 1px 1px 2px black;
 }
 a {
-    color: #8484ff;
+    color: #b2b2ff;
     text-decoration: none;
 }
 .image {
@@ -53,9 +55,9 @@ a {
     height: auto;
     padding: 2rem;
     border-radius: 1rem;
-    background: rgba(82, 82, 82, 0.6);
+    background: rgba(112, 112, 112, 0.54);
     -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(8px);
 }
 
 

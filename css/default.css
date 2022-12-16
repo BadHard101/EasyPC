@@ -21,6 +21,8 @@ body {
     right: 0;
     padding-top: 1px;
     padding-bottom: 1px;
+    border-bottom: 2px solid black;
+    text-shadow: 1px 1px 1px black;
 
     display: flex;
     flex-direction: row;
@@ -108,7 +110,7 @@ body {
     padding:0 10px;
     border-radius: 5px;
     line-height: 60px;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 #nav_menu nav ul ul a {
