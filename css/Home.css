@@ -1,3 +1,166 @@
 .main {
     background: #373749;
 }
+
+.Home_Container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Home_Gif > img {
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 10.5rem;
+    color: whitesmoke;
+}
+.card-title {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+}
+p, a {
+    font-size: 1rem;
+}
+a {
+    color: #8484ff;
+    text-decoration: none;
+}
+.image {
+    position: absolute;
+    width: 150px;
+    top: .5rem;
+    left: .5rem;
+}
+.front {
+    z-index: 2;
+    position: absolute;
+    margin: 1rem;
+    width: 400px;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba(82, 82, 82, 0.6);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+}
+.back {
+    position: relative;
+    border-radius: 5px;
+    box-shadow:  -10px 5px 20px hsla(0,100%,50%,.7),
+    10px 5px 20px hsla(225, 100%, 50%, 0.7);
+
+    /*filter: drop-shadow(0 0 15px red);*/
+
+
+    transition: 0.5s;
+
+    width: 150px;
+    height: 300px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background-image: linear-gradient(90deg, red, blue);
+
+    /*animation: circle-to-square1;
+    animation-duration: 0.5s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;*/
+}
+.back1 {
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    box-shadow:  -10px 5px 20px hsla(52, 100%, 50%, 0.7),
+    10px 5px 20px hsla(225, 100%, 50%, 0.7);
+
+
+    transition: 0.5s;
+
+    width: 150px;
+    height: 300px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background-image: linear-gradient(90deg, yellow, blue);
+}
+.back2 {
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    box-shadow:  -10px 5px 20px hsla(52, 100%, 50%, 0.7),
+    10px 5px 20px hsla(120, 100%, 50%, 0.7);
+
+
+    transition: 0.5s;
+
+    width: 150px;
+    height: 300px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background-image: linear-gradient(90deg, yellow, green);
+}
+.back3 {
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    box-shadow:  -10px 5px 20px hsla(0, 0%, 1%, 0.7),
+    10px 5px 20px hsla(120, 17%, 98%, 0.7);
+
+
+    transition: 0.5s;
+
+    width: 150px;
+    height: 300px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background-image: linear-gradient(90deg, #000000, #ffffff);
+}
+.front:hover ~ .back{
+    transition: 0.5s;
+
+    width: 150px;
+    height: 300px;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    background-image: linear-gradient(90deg, red, blue);
+}
+.front:hover ~ .back1{
+    transition: 0.5s;
+
+    width: 150px;
+    height: 300px;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    background-image: linear-gradient(90deg, yellow, blue);
+}
+.front:hover ~ .back2{
+    transition: 0.5s;
+
+    width: 150px;
+    height: 300px;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    background-image: linear-gradient(90deg, yellow, green);
+}
+.front:hover ~ .back3{
+    transition: 0.5s;
+
+    width: 150px;
+    height: 300px;
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    background-image: linear-gradient(90deg, black, white);
+}
