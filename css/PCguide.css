@@ -10,7 +10,8 @@ main > article > section > h1 {
     width: 100%;
     text-align: center;
     font-size: 34px;
-    color: #42b7ac;
+    color: #ffca80;
+    text-shadow: 1px 1px 3px black;
 }
 
 .wrapper_guide {
