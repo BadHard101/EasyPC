@@ -1,9 +1,18 @@
+h3 {
+    margin: 0 1em;
+}
+
+.block li {
+    margin-bottom: 1em;
+}
+
 main > article > section > h1 {
     width: 100%;
     text-align: center;
     font-size: 34px;
     color: #42b7ac;
 }
+
 .wrapper_guide {
     background-color: whitesmoke;
     position: relative;
@@ -17,7 +26,7 @@ aside {
     background: darkgrey;
     padding: 10px 20px 10px 10px;
     margin-top: 3em;
-    margin-left: 2em;
+    margin-left: 2%;
     float: left;
     position: sticky;
     top: 100px;
@@ -39,19 +48,54 @@ aside > ul {
 .menu_link:visited {
     color: #8fe062;
 }
-@media (max-width: 980px) {
-    aside {
-        display: none;
-    }
-}
 /* End aside menu*/
 
 /* Start blocks dividing */
-.block {
+article > .block {
     border-radius: 40px;
     background-color: white;
-    margin: 30px 20% 30px 23%;
+    margin: 2em 3em 2em 22em;
+    padding: 20px 70px;
+}
+ol .block {
+    border-radius: 40px;
+    background-color: white;
+    margin: 2em 3em 2em 19.7em;
     padding: 20px 70px;
 }
 /* End blocks dividing */
 
+img {
+    width: 100%;
+    max-width: 30em;
+    border-radius: 10px;
+}
+
+.filter_pic {
+    width: 50%;
+    max-width: 15em;
+}
+
+.pic_container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.too_small {
+    width: 75%;
+    max-width: 20em;
+}
+
+@media (max-width: 1120px) {
+    aside {
+        display: none;
+    }
+    article > .block {
+        margin: 2em;
+    }
+    ol .block {
+        margin-left: -0.3em;
+        margin-right: 2em;
+    }
+}

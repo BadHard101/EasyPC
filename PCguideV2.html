@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.65">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>EasyPC Guide</title>
+  <link rel="icon" type="image/png" href="img_PCGuide/favicon.png">
+  <link rel="stylesheet" href="css/PCguide.css" type="text/css">
+  <link rel="stylesheet" href="css/default.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class = "header">
+  <div class="burger_div">
+    <nav class="burger_menu">
+      <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+      <label class="m-menu__toggle" for="menu">
+        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </label>
+      <label class="m-menu__overlay" for="menu"></label>
+
+      <div class="m-menu">
+        <div class="m-menu__header">
+          <label class="m-menu__toggle" for="menu">
+            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </label>
+          <span>МЕНЮ</span>
+        </div>
+        <ul>
+          <li><a href="./Home.html">Главная</a></li>
+          <li>
+            <label class="a-label__chevron" for="item-2">Магазин</label>
+            <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+            <div class="m-menu">
+              <div class="m-menu__header">
+                <label class="m-menu__toggle" for="item-2">
+                  <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                    <path d="M19 12H6M12 5l-7 7 7 7"/>
+                  </svg>
+                </label>
+                <span>Магазин</span>
+              </div>
+              <ul>
+                <li>
+                  <label class="a-label__chevron" for="item-2-1">Процессоры</label>
+                  <input type="checkbox" id="item-2-1" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-1">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Процессоры</span>
+                    </div>
+                    <ul>
+                      <li><a href="./ShopRAM.html" class="decorated-label" style="background-color: dodgerblue">Intel-процессоры</a></li>
+                      <li><a href="./ShopRAM.html" class="decorated-label" style="background-color: #ad0000">AMD-процессоры</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <label class="a-label__chevron" for="item-2-2">Материнские платы</label>
+                  <input type="checkbox" id="item-2-2" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-2">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Материнские платы</span>
+                    </div>
+                    <ul>
+                      <li><a href="./ShopRAM.html" class="decorated-label" style="background-color: dodgerblue">Intel-сокет</a></li>
+                      <li><a href="./ShopRAM.html" class="decorated-label" style="background-color: #ad0000">AMD-сокет</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="./ShopRAM.html">Оперативная память</a></li>
+                <li>
+                  <label class="a-label__chevron" for="item-2-4">Диски</label>
+                  <input type="checkbox" id="item-2-4" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-4">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Диски</span>
+                    </div>
+                    <ul>
+                      <li><a href="./ShopRAM.html">SSD диски</a></li>
+                      <li><a href="./ShopRAM.html">HDD диски</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <label class="a-label__chevron" for="item-2-5">Корпус</label>
+                  <input type="checkbox" id="item-2-5" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-5">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Корпус</span>
+                    </div>
+                    <ul>
+                      <li><a href="./ShopRAM.html">Корпуса</a></li>
+                      <li><a href="./ShopRAM.html">Кулеры</a></li>
+                      <li><a href="./ShopRAM.html">Водяное охлаждение</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="./ShopRAM.html">Блоки питания</a></li>
+                <li>
+                  <label class="a-label__chevron" for="item-2-6">Видеокарты</label>
+                  <input type="checkbox" id="item-2-6" name="item-2" class="m-menu__checkbox">
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                      <label class="m-menu__toggle" for="item-2-6">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </label>
+                      <span>Видеокарты</span>
+                    </div>
+                    <ul>
+                      <li><a href="./ShopRAM.html" class="decorated-label" style="background-color: #ad0000">AMD-видеокарты</a></li>
+                      <li><a href="./ShopRAM.html" class="decorated-label" style="background-color: #1e7c1e">NVIDEA-видеокарты</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a>Гайд</a></li>
+          <li><a href="./Contacts.html">Связаться</a></li>
+          <br><br>
+          <li><a href="./LogIn.html">Войти</a></li>
+          <li><a href="./Registration.html">Зарегистрироваться</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="nav_menu">
+    <div class="header_inner">
+      <a href="./Home.html">
+        <div class="header_logo">EasyPC</div>
+        <img src="img_PCGuide/favicon.png" alt = "PC_Logo_Header" id="PC_Logo_Header">
+      </a>
+    </div>
+    <nav id="nav_buttons">
+      <ul>
+        <li><a href="./Home.html">Главная</a></li>
+        <li><a>Магазин</a>
+          <ul>
+            <li><a>Процессоры</a>
+              <ul>
+                <li><a style="background-color: #ad0000" href="./ShopRAM.html">AMD</a></li>
+                <li><a style="background-color: dodgerblue" href="./ShopRAM.html">Intel</a></li>
+              </ul>
+            </li>
+            <li><a>Материнские платы</a>
+              <ul>
+                <li><a style="background-color: #ad0000" href="./ShopRAM.html">AMD-сокет</a></li>
+                <li><a style="background-color: dodgerblue" href="./ShopRAM.html">Intel-сокет</a></li>
+              </ul>
+            </li>
+            <li><a href="./ShopRAM.html">Оперативная память</a></li>
+            <li><a>Диски</a>
+              <ul>
+                <li><a href="./ShopRAM.html">SSD диски</a></li>
+                <li><a href="./ShopRAM.html">HDD диски</a></li>
+              </ul>
+            </li>
+            <li><a>Корпус</a>
+              <ul>
+                <li><a href="./ShopRAM.html">Корпуса</a></li>
+                <li><a href="./ShopRAM.html">Кулеры</a></li>
+                <li><a href="./ShopRAM.html">Водянки</a></li>
+              </ul>
+            </li>
+            <li><a href="./ShopRAM.html">Блоки питания</a></li>
+            <li><a>Видеокарты</a>
+              <ul>
+                <li><a style="background-color: #ad0000" href="./ShopRAM.html">AMD</a></li>
+                <li><a style="background-color: #1e7c1e" href="./ShopRAM.html">NVIDEA</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a>Гайд</a></li>
+        <li><a href="./Contacts.html">Связаться</a></li>
+      </ul>
+    </nav>
+    <nav id="nav_account">
+      <ul>
+        <li><a href="./LogIn.html">Войти</a>
+          <ul>
+            <li><a href="./Registration.html">Регистрация</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <img id="shcart" src="img_PCGuide/shcart.png" alt = "PC_Logo" >
+  </div>
+</header>
+
+<div class="wrapper_guide">
+
+  <aside>
+    <ul>
+      <h3>Навигация по гайду:</h3>
+      <li><a class = "menu_link"
+             href="#PC-recommendations">Общие рекомендации</a></li>
+      <li><a class = "menu_link"
+             href="#PC-Accessories-description">О комплектующих</a></li>
+      <li><a class = "menu_link"
+             href="#List-contents">Содержание</a></li>
+      <li><a class = "menu_link"
+             href="#Processor-description">Процессор</a></li>
+      <li><a class = "menu_link"
+             href="#Motherboard-description">Материнская плата</a></li>
+      <li><a class = "menu_link"
+             href="#RAM-description">Оперативная память</a></li>
+      <li><a class = "menu_link"
+             href="#Disk-description">Диск</a></li>
+      <li><a class = "menu_link"
+             href="#Case-description">Корпус и кулеры</a></li>
+      <li><a class = "menu_link"
+             href="#GPU-description">Видеокарта</a></li>
+      <li><a class = "menu_link"
+             href="#PowerSupply-description">Блок питания</a></li>
+      <li><a class = "menu_link"
+             href="#Phys-description">Видео физической сборки</a></li>
+    </ul>
+  </aside>
+
+
+  <main class="content">
+    <article id="PC-Assembly">
+      <section class="block" id="PC-recommendations">
+        <h1>Краткий гайд по <u>полному сбору своего ПК</u>
+          <br>(без воды и для самых маленьких)</h1>
+        <h2>Общие рекомендации по сборке ПК</h2>
+        <p>
+          В этой статье очень кратко собрана вся необходимая информация, чтобы,
+          <u>почти не имея до этого момента никаких знаний и опыта</u>, вы смогли
+          собрать свой собственный ПК без “лишних” специалистов <b>уже через 30 минут
+          прочтения этой статьи</b>. Потому что, все, что от вас требуется в этом
+          деле – лишь <b>достаточная внимательность</b> при сверки нужных фильтров
+          в интернет-магазине между комплектующими и малейшее
+          понимание того, что вы сами хотите видеть от своего ПК.
+        </p>
+        <p>
+          Собрав свой компьютер сами, <b>вы сэкономите <u>минимум</u> 15000
+          рублей</b>, а то и 30000, что точно стоит того, чтобы потратить немного
+          времени на эту статью, получить новые знания и, опять же,
+          заработать/сохранить большую часть денег.
+        </p>
+        <a href="https://www.google.com/search?q=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80+%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D0%B9&rlz=1C1CHZN_ruRU991RU992&sxsrf=ALiCzsZ_RMEyQ-XWi1JlZn_ABOsHEmmwCA:1664806211154&source=lnms&tbm=isch&sa=X&ved=2ahUKEwijr9e2nsT6AhWJw4sKHXHcBpUQ_AUoAXoECAEQAw&biw=1075&bih=859&dpr=1"
+           target="_blank">
+          <img src="img_PCGuide/PC-EXP.jpg"
+               title="Компьютер"
+               alt="Компьютер">
+        </a> <!-- 1080 1122 -->
+      </section>
+
+      <section class="block" id="PC-Accessories-description">
+        <h2>Что же вообще из себя представляют <u>комплектующие ПК</u>?</h2>
+        <p>
+          Без лишних определений и формальных представлений: все мы понимаем,
+          что <b>комплектующие</b> — это части, из которых состоит любой компьютер
+          или же ноутбук, которые выполняют свою определенную функцию.
+        </p>
+        <a href="https://www.google.com/search?q=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5+%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5&&tbm=isch&ved=2ahUKEwjzj9KBnsT6AhXjh4sKHaI2BmIQ2-cCegQIABAA&oq=%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5+%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%83%D1%8E%D1%89%D0%B8%D0%B5&gs_lcp=CgNpbWcQAzIECCMQJzIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGFAAWABghARoAHAAeACAAUCIAUCSAQExmAEAqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=0-w6Y7PaN-OPrgSi7ZiQBg&bih=937&biw=1920&rlz=1C1CHZN_ruRU991RU992"
+           target="_blank">
+          <img src="img_PCGuide/PCAccessories.jpg"
+               title="Компьютер"
+               alt="Компьютер">
+        </a> <!-- 750 633 -->
+        <p>
+          Логично, что для минимальной работы любого ПК нам нужны далеко не все
+          комплектующие, то есть некоторые являются дополнительными и
+          необязательными, но об этом чуть позже.
+        </p>
+        <p>
+          Любой <b>ПК</b> — это некоторый механизм или система, в которой её
+          составляющие очень быстро общаются между собой, передают информацию
+          и «что-то» с ней делают. Из этого, очевидно, что как раз таки, чтобы
+          разобраться на довольно поверхностном уровне в комплектующих ПК и их
+          функциях, нам просто нужно понять, что происходит в каждом из них.
+          После того, как мы даже совсем немного разберемся в функционале
+          комплектующих.
+        </p>
+        <p>
+          Для того, чтобы собрать ПК, <em>в виде коробки с кнопкой, торчащими
+          проводами и знакомой операционной системой</em>, нам необходимо, может
+          вы не поверите, но всего 6 обязательных комплектующих (не считая видеокарту).
+        </p>
+      </section>
+
+      <section class="block" id="List-contents">
+        <h2>Содержание</h2>
+        <p>Итак, давайте же назовем <u>основные комплектующие</u>:</p>
+        <ol type="1" start="1">
+          <li><a href="#CPU">Процессор</a></li>
+          <li><a href="#Motherboard">Материнская плата</a></li>
+          <li><a href="#RAM">Оперативная память</a></li>
+          <li><a href="#Disk">Жёсткий диск</a></li>
+          <li><a href="#Case">Корпус</a></li>
+          <li><a href="#Videocard">Видеокарта (для игрового ПК)</a></li>
+          <li><a href="#PowerSupply">Блок питания</a></li>
+        </ol>
+        <p>
+          В самом конце есть <a href="#KOMPUKTERVid">
+          видео с физической сборкой ПК</a>
+        </p>
+        <p>
+          Как уже было сказано ранее - не все комплектующие <em>супер-</em>обязательные,
+          а точнее, для компьютера в том виде, в каком мы все привыкли его видеть <em>(опять
+          же, можно и меньше, но мы же хотим более-менее красиво и в коробке с кнопкой,
+          будем помнить об этом)</em>.
+        </p>
+        <p>
+          Теперь, когда мы узнали, какие комплектующие нам нужны, давайте немного
+          и <u>очень кратко</u> разберемся в их <em>святых</em> функциях.
+        </p>
+        <p>Итак:</p>
+      </section>
+
+      <ol type="1" start="1">
+        <!-- 1. Процессоры -->
+        <div class="block" id="Processor-description">
+          <h2 id="CPU"><li>Центральный процессор (ЦП/CPU)</li></h2>
+          <a href="https://www.google.com/search?q=%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80&rlz=1C1CHZN_ruRU991RU992&sxsrf=ALiCzsYUdMtd8H5soY11yraFAExeLyTVDQ:1664738165982&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj82Zv4oML6AhUumIsKHRpJDnYQ_AUoAXoECAEQAw&biw=794&bih=916&dpr=1"
+             target="_ blank"><img src="img_PCGuide/processor1.jpeg"
+                                   title="Центральный процессор"
+                                   alt="Центральный процессор"></a> <!-- 1200 630 -->
+          <p>
+            Чтобы правильно собрать ПК, для начала нам необходимо прежде всего
+            понять для чего он нам нужен. Отправная точка сборки для любого ПК
+            – это выбор ЦП, от мощности этого <em>камня</em> зависит параметр
+            «на долгие годы», мы же не хотим покупать новый ПК уже через 3 года
+            или пыхтеть, почему <em>все таак долго грузится</em>, неправильно
+            определившись с выбором процессора.
+          </p>
+          <p>
+            Сначала хочу пояснить, с чего вообще вдруг ситуация, что нам нужно
+            будет собирать новый ПК, ошибившись с необходимой нам мощностью процессора.
+          </p>
+          <br id="Soket"><h3>Сокет:</h3>
+          <p>На самом деле ответ довольно прост. Так получается, что <u>в будущем
+            заменить процессор можно, но более проблематично, чем другие
+            комплектующие.</u> Почему? Потому что у процессора есть его форма -
+            «ноги» или же «тычинка», а у материнской платы есть «пестик», то, что
+            эти самые «ноги» у процессора принимает. В общем называйте, как хотите,
+            это чтобы было проще понимать, но на самом деле называется это <u><b>«Сокет»</b></u>.
+          </p>
+          <p>
+            Из информации выше, можно было понять, что Сокет есть как у процессора,
+            так и у материнской платы и выглядит он вот так
+          </p>
+          <a href="https://www.google.com/search?q=%D1%81%D0%BE%D0%BA%D0%B5%D1%82+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0&rlz=1C1CHZN_ruRU991RU992&sxsrf=ALiCzsa9mZiFLr6ujcdu78-XoNKFifoQgw:1664737342978&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjtvePvncL6AhUOiYsKHc62BqYQ_AUoAXoECAIQAw&biw=1920&bih=937&dpr=1"
+             target="_ blank"><img src="img_PCGuide/soket.png"
+                                   title="Сокет процессора на материнской плате"
+                                   alt="Сокет процессора на материнской плате"></a> <!-- 948 631 -->
+          <p>
+            Проблема в том, что, когда в будущем вам понадобится более мощный
+            процессор, вы не сможете купить подходящий вам по Сокету, потому что он
+            уже будет устаревший и процессоров с ним уже просто не будет в продаже.
+          </p>
+          <p>
+            Вывод из этого всего: <b>не экономьте на выборе процессора!</b>
+          </p>
+          <p>
+            Вложитесь в него, вы потом с легкостью замените другие комплектующие,
+            но не процессор и вам придется пересобрать ПК заново с новым ЦП.
+          </p>
+          <p>Ценность процессора должна составить:</p>
+          <ul type="disc">
+            <li>Примерно <strong>50%</strong> стоимости ПК при сборке с видеокартой</li>
+            <li>Примерно <strong>70%</strong>, если собираете без видеокарты</li>
+          </ul>
+          <p>
+            Итак, перейдем к самому выбору процессора. На данный момент
+            существует <u>2 фронта</u> процессоров:
+          </p>
+          <ul type="disc">
+            <li>Intel</li>
+            <li>AMD</li>
+          </ul>
+          <p>В их различиях работы с определёнными задачами есть тонкости, но в целом,
+            вас это особо волновать не будет. Для пользователя важно лишь <i>сколько
+              денег ему придется выложить из своего кошелька</i> на покупку бюджетного
+            рабочего или крутого игрового ПК.</p>
+          <p>Поэтому, как бы для вас более надежной, привычной, знакомой, «ну все
+            всегда вроде используют» и на слуху не была Intel и эта картинка: </p>
+          <img src="img_PCGuide/IntelProcessor.jpg"
+               title="Процессор Intel"
+               alt="Процессор Intel"> <!-- 951 564 -->
+          <p>
+            с 2020 года все, <em>кто шарит</em>, уже давно выбирают эту:
+          </p>
+          <img src="img_PCGuide/AMDProcessor.jpg"
+               title="Процессор AMD"
+               alt="Процессор AMD"> <!-- 1600 900 -->
+          <p>и довольно скоро обгонит полностью процент использования процессоров
+            Intel в компьютерах. По цене и тому, что вы хотите получить от ПК, надо
+            выбрать именно процессор AMD Ryzen.
+          </p>
+          <p>
+            Для того, чтобы правильно выбрать процессор надо разобраться в довольно
+            просто и удобной маркировке (почти одинаковой для Intel и AMD):
+          </p>
+
+          <h3>Для процессоров Intel:</h3>
+          <p>Линейка Intel Core делится на такие <u>классы</u>:</p>
+          <ul>
+            <li>Core i3 — начальный уровень, подходящий для несложных задач;</li>
+            <li>Core i5 — включает в себя универсальные модели из среднего сегмента;</li>
+            <li>Core i7 — мощные процессоры, в том числе для гейминга;</li>
+            <li>Core i9 — премиальная продукция, которая, помимо гейминга, ориентирована
+              на ресурсоемкие рабочие приложения;</li>
+            <li>Core X — исключительно узкоспециализированные профессиональные задачи.</li>
+          </ul>
+          <p>
+            После классификации процессор в названии имеет <u>числовое обозначение</u>.
+            Первая цифра всегда означает поколение. На данный момент самым актуальным
+            является 10-е. У каждого поколения имеется кодовое название. Например:
+          </p>
+          <ul>
+            <li>Core i7-7700 — 7-е поколение Kaby Lake.</li>
+            <li>Core i7-8700 — 8-е поколение Coffee Lake.</li>
+            <li>Core i9-10900 — 10-е поколение Ice Lake.</li>
+          </ul>
+          <p>Как вы заметили, после поколения следуют <u>ещё три цифры</u>. Как правило,
+            они отображают уровень производительности модели относительно других
+            процессоров в одном поколении. Например:</p>
+          <ul>
+            <li>Intel Core i5-7400 — самый слабый среди всех i5 седьмого поколения.</li>
+            <li>Intel Core i5-7500 — средний по производительности.</li>
+            <li>Intel Core i5-7600K — самый мощный.</li>
+          </ul>
+          <p>В наименовании модели после цифр может быть расположена буква, которая указывает
+            на отличительную характеристику процессора. Они могут комбинироваться
+            различными способами. В этой статье я обращу внимание только на маркировку <b>K</b>
+            (Например, Intel Core i9-9900k), что означает, что на высокотехнологичном заводе
+            производитель разблокировал возможность самостоятельного пользовательского разгона ЦП. </p>
+
+          <h3>Для процессоров AMD:</h3>
+          <p>Линейка AMD Ryzen делится на такие <u>классы</u>:</p>
+          <ul>
+            <li>Ryzen 3 — слабые процессоры, которые подойдут для офиса.</li>
+            <li>Ryzen 5 — хорошо впишутся в домашнюю мультимедийную сборку.</li>
+            <li>Ryzen 7 — производительные премиальные продукты для гейминга или серьезных задач.</li>
+            <li>Ryzen 9 — девайсы с небольшим запасом производительности на ближайшие несколько лет.</li>
+            <li>Ryzen Threadripper — модели, которые избыточны для домашнего пользования
+              и нужны для работы с требовательными приложениями.</li>
+          </ul>
+          <p>Поскольку линейка Ryzen относительно молодая, она насчитывает не так много
+            поколений, как у Intel. <u>Определяется оно традиционно по первой цифре в
+              наименовании.</u> Также разработчик присваивает каждому поколению кодовое имя.</p>
+          <ul>
+            <li>Ryzen 5 1600 — первое (Zen).</li>
+            <li>Ryzen 5 2600 — второе (Zen+).</li>
+            <li>Ryzen 5 3600 — третье (Zen2).</li>
+          </ul>
+          <p>
+            <u>Последние три цифры</u> схожим образом отображают производительность
+            процессора в рамках одного класса и поколения. Чем цифры больше — тем ЦПУ мощнее.
+          </p>
+          <ul>
+            <li>Ryzen 5 1400 — самый слабый среди Ryzen 5 первого поколения.</li>
+            <li>Ryzen 5 1500X — обладает средней производительностью.</li>
+            <li>Ryzen 5 1600 — самый мощный.</li>
+          </ul>
+          <p>У AMD некоторые буквы по значению отличаются от аналогичных у Intel. В
+            данной статье обращу внимание только на буквенные-маркировки <b>G</b> и <b>X</b>:</p>
+          <ul>
+            <li>G — процессоры с встроенным видеоядром. По умолчанию у AMD практически
+              все модели линейки Ryzen лишены интегрированной графики.</li>
+            <li>X — мощные ЦПУ, разогнанные производителем.</li>
+          </ul>
+          <br>
+          <p>
+            Если вы собираете игровой ПК, конечно, лучше открыть YouTube и посмотреть
+            сравнение показателя FPS – частоты кадров в определенных играх на ряду с видеокартой,
+            которую вы в давнейшем захотите выбрать. Помните, что необходимо, чтобы показатель
+            FPS был не ниже герцовки “Hz” вашего монитора (показатель максимальной частоты
+            кадров, который ваш монитор может показывать, в большинстве случаев – 60Hz)
+          </p>
+          <p>
+            Некоторая информация про ЦП была взята с этих отличных статей:
+          </p>
+          <ul>
+            <li>
+              <p>
+                <a href="https://ichip.ru/obzory/komplektuyushchie/razbiraemsya-v-oboznacheniyah-processorov-735512"
+                   target="_ blank">
+                  Если вы хотите подробней разобраться в маркировках ЦП
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="http://ironfriends.ru/kak-vybrat-protsessor/"
+                   target="_ blank">
+                  Если вы хотите подробней разобраться в разнице между Intel и AMD
+                </a>
+                <br>
+                <sup>
+                  (сокетах, какие являются устаревшими/новыми, про ядра/потоки и других тонкостях)
+                </sup>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2. Материнские платы -->
+        <div class="block" id="Motherboard-description">
+          <h2 id="Motherboard"><li>Материнские платы</li></h2>
+          <a href="https://www.google.com/search?q=%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%BF%D0%BB%D0%B0%D1%82%D0%B0&rlz=1C1CHZN_ruRU991RU992&sxsrf=ALiCzsYRaMXvj4eEpTKUW2kz4IdmKHnRaw:1664744339458&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjq2_r3t8L6AhV1CBAIHcf_BbkQ_AUoAXoECAIQAw&biw=911&bih=916&dpr=1"
+             target="_ blank">
+            <img src="img_PCGuide/motherboard.jpg"
+                 title="Материнская плата"
+                 alt="Материнская плата">
+          </a> <!-- 3449 2442 -->
+
+          <h3 id="Form-facktor">Форм-фактор:</h3>
+          <p>
+            Во-первых, начав выбирать материнскую плату, мы должны определиться
+            с <u>размером нашего ПК</u>, он еще называется <b>форм-фактором</b>.
+            Они разные и их много, но здесь приведу я основные 4, а именно:
+          </p>
+          <ul type="square">
+            <li>Mini-ITX</li>
+            <li>Micro-ATX</li>
+            <li>ATX</li>
+            <li>XL-ATX</li>
+          </ul>
+          <img src="img_PCGuide/form-facktor.jpg"
+               title="Форм-факторы ПК"
+               alt="Основные форм-факторы/размеры ПК"> <!-- 1366 768 -->
+          <p>
+            В данной статье я буду опираться именно на ATX, да и все привыкли именно к
+            такому размеру десктопного ПК, поэтому в фильтрах материнских плат мы должны выбрать ATX
+          </p>
+          <img src="img_PCGuide/form-facktor-filter.jpg.png"
+               class="filter_pic"
+               title="Выбор фильтра в интернет-магазине"
+               alt="Выбор фильтра форм-фактора в интернет-магазине"> <!-- 228 193 -->
+
+          <h3 id="Soket2">Сокет:</h3>
+          <p>Далее, в зависимости от ранее выбранного нами процессора мы должны
+            выбрать <u>Сокет</u>, о котором<a href="#Soket">
+              мы говорили ранее в разделе процессоров
+            </a>
+          </p>
+          <img src="img_PCGuide/Soket-filter.png"
+               class="filter_pic"
+               title="Выбор фильтра в интернет-магазине"
+               alt="Выбор фильтра сокета в интернет-магазине"> <!-- 188 196 -->
+
+          <h3>Чипсет:</h3>
+          <p>
+            А теперь прошу внимания, фактически самое важное при выборе материнской
+            платы – <b><u>чипсет</u></b>. Чипсет определят то, что может ваша материнская
+            плата. Различия в букве (H, B, Z, X, Q, W) и в числе. Их много и их всех
+            пихать в эту статью я не буду.
+          </p>
+          <p>
+            Для того, чтобы очень ускорить выбор чипсета, в фильтрах интернет-магазина
+            выберите <a href="#Soket2">сокет</a> и <a href="#Form-facktor">форм-фактор</a>,
+            как было сказано выше и <u>посмотрите, с какими чипсетами материнские
+            платы остались в магазине</u>.
+          </p>
+          <p>
+            Например, при выборе сокета AM4 и форм-фактора ATX, в предложении мне
+            остались только чипсеты: B350, B450, B550, X570, как на картинке ниже.
+            Найти оставшиеся и разобраться в их отличиях вам и нужно, что не займет более 5 минут.
+          </p>
+          <img src="img_PCGuide/Chipset-filter.png"
+               class="too_small"
+               title="Выбор фильтра в интернет-магазине"
+               alt="Выбор фильтра чипсета в интернет-магазине"> <!-- 337 403 -->
+          <p>
+            Для того, чтобы корректно выбрать чипсет хочу обратить внимание на
+            следующие 2 великолепные статьи <i>(смотрите только нужные вам чипсеты,
+            все объяснено кратко, вы быстро все поймете)</i>:
+          </p>
+          <ul>
+            <li>
+              <p>
+                <a href="https://pc-reanimator.ru/chipsety-h-b-z-x-q-sravnenie-chipsetov-otlichie/"
+                   target="_ blank">Сравнение чипсетов Intel
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="https://club.dns-shop.ru/blog/t-102-materinskie-platyi/38362-chipsetyi-ot-amd-na-platforme-am4-klassifikatsiya-shemyi/"
+                   target="_ blank">
+                  Сравнение чипсетов AMD
+                </a>
+              </p>
+            </li>
+          </ul>
+          <p>
+            <b>Тип памяти</b> необходимо выбрать <b>DDR4 DIMM</b>, о ней мы поговорим чуть позже.
+          </p>
+          <p>
+            <b>Разъемы</b> и наличие встроенных <b>Wi-Fi</b> и <b>Bluetooth</b> в материнской
+            плате вы можете выбрать самостоятельно на свое усмотрение. Но даже если вы купите
+            плату без Wi-Fi или Bluetooth, не пугайтесь, вы всегда сможете докупить их в качестве
+            USB устройств и вставить их в плату.
+          </p>
+          <p>
+            Также не забывайте смотреть на <u>производителей платы</u> (GIGABYTE, ASUS, MSI и так далее).
+            Посмотрите <u>отзывы</u> конкретной платы в интернет-магазине или на YouTube от конкретного производителя.
+          </p>
+        </div>
+
+        <!-- 3. Оперативная память -->
+        <div class="block" id="RAM-description">
+          <h2 id="RAM"><li>Оперативная память (ОЗУ/RAM)</li></h2>
+          <a href="https://www.google.com/search?q=%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F+%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C&tbm=isch&ved=2ahUKEwjTspTgt8L6AhUuposKHXqOBQIQ2-cCegQIABAA&oq=%D0%BE%D0%BF%D0%B5&gs_lcp=CgNpbWcQARgAMgcIABCxAxBDMggIABCABBCxAzIICAAQgAQQsQMyBAgAEEMyCAgAEIAEELEDMggIABCxAxCDATIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQM6BggAEB4QBzoECCMQJzoLCAAQgAQQsQMQgwFQgghYogpgtRVoAHAAeACAAVSIAf4BkgEBNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Yfs5Y5P-IK7MrgT6nJYQ&bih=916&biw=794&rlz=1C1CHZN_ruRU991RU992"
+             target="_blank">
+            <img src="img_PCGuide/RAM.jpg"
+                 title="Планки оперативной памяти"
+                 alt="Планки оперативной памяти">
+          </a> <!-- 2000 1324 -->
+          <h3>Объем RAM</h3>
+          <p>Но для начала нужно понять сколько вообще Гигабайт RAM нам необходимо. Могу честно
+            сказать сразу и без чего-либо лишнего: <u>8 Гб RAM – уже не хватит никому</u>, чем
+            бы вы не занимались на своем ПК. <u>Самое приемлемое количество это 16 Гб</u>
+            – <b>абсолютная необходимость</b> 95% пользователей.
+          </p>
+          <p>
+            Но если вы работаете в Photoshop’е с фотографиями в высоких разрешениях или в
+            видеоредакторе с видео качеством в 4K/60 fps, то сразу закладывайте себе уже 32 Гб,
+            чтобы ПК постоянно не обращался за помощью к жесткому диску и не шел по постоянным
+            тормозам. Но вы можете купить 16 Гб, которых скорей всего будет достаточно, а при
+            необходимости вы сможете докупить ещё планки оперативной памяти и вставить их в
+            свободные слоты памяти на материнской плате.
+          </p>
+          <p>
+            Теперь давайте определимся с другими характеристиками Оперативной памяти. В
+            данной статье я решил пойти от обратного, то есть
+            <a href="#Motherboard">мы уже выбрали материнскую плату</a> и от нее будем выбирать
+            RAM. Чтобы сделать все правильно, нужно просто внимательно посмотреть, чтобы не
+            было противоречий с некоторыми характеристиками материнской платы, а именно:
+          </p>
+          <ul>
+            <li>Количество слотов памяти</li>
+            <li>Тип памяти</li>
+            <li>Максимальная частота памяти</li>
+            <li>Максимальный объем памяти</li>
+            <li>Режим работы оперативной памяти</li>
+          </ul>
+          <h3>Количество слотов (модулей) памяти</h3>
+          <p>
+            Посмотрите сколько планок оперативной памяти вы можете вставить в вашу материнскую
+            плату. Если всего одну, то выбирайте 1 планку <i>(хотя это большая редкость)</i>,
+            если 2 и более слотов (обычно их 4), то покупайте 2 планки по 8 Гб (16Гб = 8x2) -
+            это немного ускорит работу вашего будущего ПК. <i>(если материнская плата имеет
+            “двухканальный” «режим работы оперативной памяти», что вы тоже можете посмотреть
+            в характеристиках платы)</i>
+          </p>
+          <div class="pic_container">
+            <img src="img_PCGuide/GB-RAM-filter.png"
+                 class="filter_pic"
+                 title="Выбор фильтра в интернет-магазине"
+                 alt="Выбор фильтра Объема одного модуля в интернет-магазине"> <!-- 203 186 -->
+            <img src="img_PCGuide/AmountRAM-filter.png"
+                 class="too_small"
+                 title="Выбор фильтра в интернет-магазине"
+                 alt="Выбор фильтра Количества модулей в комплекте в интернет-магазине"> <!-- 275 100 -->
+          </div>
+
+          <p>
+            <b>Тип</b> выбираем <b>DDR4</b> или <b>DDR5</b> и <b>Форм-фактор</b> выбираем <b>DIMM</b>,
+            как и в «Типе памяти» у материнской платы, которую выбрали, углубляться в это не будем.
+          </p>
+          <div class="pic_container">
+            <img src="img_PCGuide/RAM-Type-filter.png"
+                 class="filter_pic"
+                 title="Выбор фильтра в интернет-магазине"
+                 alt="Выбор фильтра Типа ОЗУ в интернет-магазине"> <!-- 172 221 -->
+            <img src="img_PCGuide/RAM-form-facktor-filter.png"
+                 class="filter_pic"
+                 title="Выбор фильтра в интернет-магазине"
+                 alt="Выбор фильтра Форм-фактора ОЗУ в интернет-магазине"> <!-- 166 165 -->
+          </div>
+
+          <h3>Тактовая частота</h3>
+          <p>
+            По поводу <b>Тактовой частоты</b>, которая измеряется в Мгц. Старайтесь
+            выбрать <u>как можно большую скорость за приемлемую цену на рынке</u> <i>(золотую середину)</i> и
+            чтобы она была <u>не выше «Максимальной часоты памяти» у материнской платы.</u> Советую найти RAM
+            с тактовой частотой не ниже 3200 Мгц.
+          </p>
+
+          <a href="https://club.dns-shop.ru/blog/t-103-operativnaya-pamyat/17776-kak-vyibrat-operativnuu-pamyat/"
+             target="_blank">
+            <p>
+              Более подробно про оперативную память. Ответы почти на все вопросы и сомнения, которые могут возникнуть при выборе.
+            </p>
+          </a>
+        </div>
+
+
+        <!-- 4. Жесткий диск -->
+        <div class="block" id="Disk-description">
+          <h2 id="Disk"><li>Жесткий диск (или все-таки не жесткий…)</li></h2>
+          <p>Говоря о ПК дисках, нужно сказать, что есть основные 2 вида: HDD и SSD
+            диски<i>, что довольно важно, если вы об этом не ещё слышали.</i></p>
+          <ol type="A">
+            <h3><li>SSD диски <i>(не жесткий)</i></li></h3>
+            <p>Бывает 2 вида подключения:</p>
+            <ol type="I">
+              <h3><li>SATA</li></h3>
+              <a href="https://www.google.com/search?q=ssd+sata&tbm=isch&ved=2ahUKEwj3xen198P6AhVsiYsKHXtSBvQQ2-cCegQIABAA&oq=ssd+sa&gs_lcp=CgNpbWcQARgAMgQIABBDMgQIABBDMgQIABBDMgUIABCABDIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgQIABAeOgQIIxAnOgcIABCxAxBDOggIABCABBCxAzoHCCMQ6gIQJ1DTCVitL2CjNGgKcAB4AIABSYgBwQOSAQE3mAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=4sQ6Y_fMI-ySrgT7pJmgDw&bih=916&biw=911&rlz=1C1CHZN_ruRU991RU992"
+                 target="_blank">
+                <img src="img_PCGuide/SATASSD.jpg"
+                     title="SSD диск с SATA-типом подключения"
+                     alt="SSD диск с SATA-типом подключения">
+              </a> <!-- 1172 658 -->
+              <h3><li>M2</li></h3>
+              <a href="https://www.google.com/search?q=ssd+m2&tbm=isch&ved=2ahUKEwixnOL598P6AhXlDRAIHYBqD4IQ2-cCegQIABAA&oq=ssd+m2&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIECAAQQzIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BggAEB4QBzoECAAQHlCeClj6CmCbDGgAcAB4AIABPYgBqAGSAQEzmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=6sQ6Y7H_M-WbwPAPgNW9kAg&bih=916&biw=911&rlz=1C1CHZN_ruRU991RU992"
+                 target="_blank">
+                <img src="img_PCGuide/M2SSD.jpg"
+                     title="SSD диск с M2-типом подключения"
+                     alt="SSD диск с M2-типом подключения">
+              </a> <!-- 1200 800 -->
+            </ol>
+            <h3>Плюсы:</h3>
+            <ul>
+              <li>Супербыстрый <i>(может вы слышали такое выражение: “на SSD все летает”)</i></li>
+              <li>Менее энерго потребляемый</li>
+              <li>Меньше тепло выделения</li>
+              <li>Тихий</li>
+            </ul>
+            <h3>Минусы:</h3>
+            <ul>
+              <li>В разы дороже</li>
+              <li>Намного меньше объем</li>
+              <li>Ненадежный <i>(практически невозможно восстановить данные, если сломается)</i></li>
+              <li>Малое количество циклов перезаписи</li>
+            </ul>
+            <p>
+              Прочитав плюсы и минусы SSD накопителя, вы можете спросить,
+              зачем его вообще тогда покупать. Да потому что он <u>невероятно
+              быстрее</u> обычного жесткого HDD диска. Его показатель <b>скорости
+              чтения/записи</b> варьируется <b>от 500 Мб/с до 8Гб/с.</b>
+              <i>(Игры загружаются на нем мгновенно)</i>
+            </p>
+            <p>
+              Вы можете просто купить какой-нибудь отличный HDD накопитель
+              на 2 Терабайта (2048 Гб) за 5000 рублей и жить спокойно.
+              Но я бы настоятельно рекомендовал докупить SSD диск на 500 Гб
+              тоже за 5000 рублей в среднем, поставить на него Windows или
+              Linux и на него устанавливать все программы. <b>Поверьте</b>, вы
+              удивитесь как ПК все быстро грузит и с невероятной скоростью
+              перекидывает файлы и архивирует/разархивирует их. А на жестком
+              диске уже будете хранить всю остальную информацию и не бояться,
+              что с ней что-то случится, если диск сломается.
+            </p>
+            <p>
+              Но <b>не в коем случае не покупайте просто SSD диск</b>,
+              вам просто не хватит места на нем. Вы же не хотите купить
+              SSD диск на 1 Тб за 17000 рублей. В общем надо просто понять,
+              что SSD диск штука <u>великолепная, но расходный материал</u>.
+            </p>
+            <h3><li>HDD диски <i>(жесткий)</i></li></h3>
+            <a href="https://www.google.com/search?q=hdd+%D0%B4%D0%B8%D1%81%D0%BA&rlz=1C1CHZN_ruRU991RU992&sxsrf=ALiCzsYjTWCh3jk8JMV5ayepUFxYDFO7Lw:1664796928022&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjtzpHs-8P6AhUrpIsKHT1fDHgQ_AUoAXoECAEQAw&biw=911&bih=916&dpr=1"
+               target="_blank">
+              <img src="img_PCGuide/HDDDisk.jpg"
+                   title="HDD диск с SATA-типом подключения"
+                   alt="HDD диск с SATA-типом подключения">
+            </a> <!-- 700 700 -->
+            <p>
+              А вот ими вы всю свою жизнь в ПК и пользовались.
+              Советую просто взять <b>со скоростью 7200 об/мин и емкостью 2 Тб</b>
+              (можно и больше, но дороже)
+            </p>
+            <p>
+              Но в фильтрах надо выбрать <b>SATA 6Gb/s «Интерфейс»</b> и
+              <b>«Форм-фактор» - 3.5”</b>. Это стандарт, углубляться не будем.
+            </p>
+            <p>
+              Советую кинуть свой глаз на таких <b>производителей</b> как:
+              Seagate, WD – Western Digital и Toshiba.
+            </p>
+            <p>
+              Иногда HDD диски различают по цветам и если вы заметили это
+              при выборе и у вас возник вопрос по этому поводу, то вот
+              вам отличный <a href="https://lumpics.ru/what-do-the-hard-drives-wd-colors-mean/"
+                              target="_blank">сайт</a>, чтобы быстро разобраться.
+            </p>
+            <p>
+              Также, <a href="https://club.dns-shop.ru/blog/t-107-jestkie-diski/22505-hdd-ili-ssd-chto-vyibrat/"
+                        target="_blank">вот</a> подробное различие SSD и HDD дисков.
+            </p>
+          </ol>
+        </div>
+
+        <!-- 5. Корпус и кулеры -->
+        <div class="block" id="Case-description">
+          <h2 id="Case"><li>Корпус (и кулеры)</li></h2>
+          <p>
+            Корпус вашего ПК – полнейшая вкусовщина. Единственное, я
+            категорически <u>не советую покупать корпус со встроенным Блоком
+            питания</u>, и смотрите чтобы была <u>хорошая система охлаждения</u>.
+          </p>
+          <a href="https://www.google.com/search?q=%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81+%D0%BF%D0%BA&rlz=1C1CHZN_ruRU991RU992&sxsrf=ALiCzsYK_1Xzeaqfijye3tNSWHj44dTq5Q:1664797870059&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjxs6ut_8P6AhVF_SoKHYEbCHIQ_AUoAXoECAIQAw&biw=911&bih=916&dpr=1"
+             target="_blank">
+            <img src="img_PCGuide/PCCaseEXP.jpg"
+                 title="Крутой компьютерный корпус"
+                 alt="Крутой компьютерный корпус">
+          </a> <!-- 624 762 -->
+          <p>
+            <b>Не забываем</b> поставить <b>размер</b>, который мы выбрали
+            еще <a href="#Motherboard">в разделе про Материнские платы</a>!
+            (если материнская плата ATX, то корпус – Midi-Tower)
+          </p>
+          <img src="img_PCGuide/PCCaseSize.png"
+               class="filter_pic"
+               title="Выбор фильтра в интернет-магазине"
+               alt="Выбор фильтра типоразмера корпуса"> <!-- 190 244 -->
+          <p>
+            Если у корпуса нет кулера <i>на выдув,</i> то настоятельно
+            рекомендую докупить 1 кулер, желательно для красоты такой же,
+            как у корпуса в комплекте и прикрутить сзади при сборке,
+            поверьте, <u>выдув воздуха >50°C лишним не будет</u> для сохранения
+            комплектующих в хорошем состоянии.
+          </p>
+          <br>
+          <h3>Кулеры</h3>
+          <p>
+            Если вы покупаете процессор, без кулера или «башни» <i>(большого
+            радиатора с вентилятором, который крепится на материнскую плату
+            для охлаждения процессора)</i> в комплекте, то его нужно докупить
+            самостоятельно (обязательно!). Главное смотрите, чтобы подошел по
+            высоте в корпус! <i>(Вообще <b>желательно</b> купить его самостоятельно,
+            а не в комплекте)</i>
+          </p>
+
+          <img src="img_PCGuide/CoolersEXP.png"
+               usemap="#shapes"
+               title="Кулер для охлаждения ЦП"
+               alt="Кулер для охлаждения ЦП">
+          <map name="shapes">
+            <area shape="circle"
+                  coords="120,145,125"
+                  title="Обычный кулер для ЦП"
+                  target="_blank"
+                  href="https://www.google.com/search?q=%D0%BA%D1%83%D0%BB%D0%B5%D1%80+%D0%B4%D0%BB%D1%8F+%D1%86%D0%BF&tbm=isch&ved=2ahUKEwixxevWjcT6AhWCwyoKHauSDh4Q2-cCegQIABAA&oq=%D0%BA%D1%83%D0%BB%D0%B5%D1%80+%D0%B4%D0%BB%D1%8F+%D1%86%D0%BF&gs_lcp=CgNpbWcQAzIECCMQJ1D7BVj7BWC6B2gAcAB4AIABNogBaZIBATKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=s9s6Y_GfC4KHqwGrpbrwAQ&bih=916&biw=731&rlz=1C1CHZN_ruRU991RU992">
+            <area shape="rect"
+                  coords="260,5,600,290"
+                  title="Башенный кулер для ЦП"
+                  target="_blank"
+                  href="https://www.google.com/search?q=%D0%B1%D0%B0%D1%88%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BA%D1%83%D0%BB%D0%B5%D1%80+%D0%B4%D0%BB%D1%8F+%D1%86%D0%BF&tbm=isch&ved=2ahUKEwimjqz7hMT6AhWGAHcKHdGUDWwQ2-cCegQIABAA&oq=%D0%B1%D0%B0%D1%88%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BA%D1%83%D0%BB%D0%B5%D1%80+%D0%B4%D0%BB%D1%8F+%D1%86%D0%BF&gs_lcp=CgNpbWcQA1DSMFj1V2DYWWgBcAB4AIABPogB_QSSAQIxMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=j9I6Y-aKMoaB3APRqbbgBg&bih=916&biw=731&rlz=1C1CHZN_ruRU991RU992">
+          </map>
+
+          <p>
+            Геймеры же могут купить себе <b>Водяное охлаждение</b>, которое куда
+            мощнее в охлаждении (что можно использовать для мощного разгона ЦП)
+            и приятнее выглядит, но сильно дороже. <u>Но у корпуса должна быть пометка,
+            что возможна установка водянки!</u>
+          </p>
+          <a href="https://www.google.com/search?q=%D0%BA%D1%83%D0%BB%D0%B5%D1%80+%D0%B4%D0%BB%D1%8F+%D1%86%D0%BF&rlz=1C1CHZN_ruRU991RU992&sxsrf=ALiCzsbfjtqNNZhyr5bXgG1-frzPCbfDbQ:1664799374469&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixltn6hMT6AhVvxosKHX9YCXUQ_AUoAnoECAEQBA&biw=731&bih=916&dpr=1"
+             target="_blank">
+            <img src="img_PCGuide/WaterCoolersEXP.png"
+                 title="Водяное охлаждение для ЦП"
+                 alt="Водяное охлаждение для ЦП">
+          </a> <!-- 1179 561 -->
+          <p>
+            Собственно всё. Смотрите обзоры корпусов на YouTube и ищите тот,
+            который понравится вам больше всего.
+          </p>
+        </div>
+
+        <!-- 6. Видеокарта -->
+        <div class="block" id="GPU-description">
+          <h2 id="Videocard"><li>Видеокарта (GPU)</li></h2>
+          <a href="https://www.google.com/search?q=%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D1%80%D1%82%D0%B0&tbm=isch&ved=2ahUKEwiK6PS889j6AhWvw4sKHeNhA0wQ2-cCegQIABAA&oq=%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%BA%D0%B0%D1%80%D1%82%D0%B0&gs_lcp=CgNpbWcQAzIECCMQJzIECCMQJzIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BggAEAcQHjoGCAAQCBAeOggIABCxAxCDAToICAAQgAQQsQNQjQJY1BNg4RdoAHAAeACAAZ8BiAGWB5IBBDEwLjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=y8JFY8rWPK-HrwTjw43gBA&bih=937&biw=1920&rlz=1C1CHZN_ruRU991RU992"
+             target="_blank">
+            <img src="img_PCGuide/Videocard.jpg"
+                 title="Пример видеокарты"
+                 alt="Пример видеокарты">
+          </a> <!-- 1920 1272 -->
+          <p>
+            Я не вижу смысла описывать в данной статье выбор видеокарты.
+            Потому что, во-первых, она не является обязательным комплектующим.
+            Во-вторых, о них и так слишком много информации в интернете и на
+            YouTube. А в-третьих, видеокарта и так является почти единственным
+            (не считая процессор) самым обсуждаемым комплектующим среди школьников.
+          </p>
+          <p>
+            Если вы обычный пользователь ПК, то поверьте, как бы тяжело, наверное,
+            для некоторых не было, но видеокарта вам не нужна, если вы не играете
+            в требовательные игры или профессионально не работаете с графикой
+            или видео.
+          </p>
+          <p>
+            Если вы все же относитесь к одной из этих двух категорий, то вы и так
+            скорей всего уже знаете, какая видеокарта вам нужна и рассказывать
+            об этом здесь, опять же, смысла нет.
+          </p>
+          <p>
+            Если же вам все же очень необходима информация о выборе
+            видеокарты, <a href="https://market.yandex.ru/journal/knowledge/chto-nuzhno-znat-o-videokartah-dlja-kompjutera?utm_source_service=web&clid=703&src_pof=703&icookie=RDEsVMy94xCMUkfwFKhOFqk8bjmfryZAXvmWBsvK6VH1eyZpcDAZ2SQeGeLkA1ItZRPWTjXxW9v0Hu1xTPL8N7jy8YM%3D&baobab_event_id=l8rklo8ol5">
+            то пожалуйста</a>.
+          </p>
+          <p>
+            А вообще в случае выбора видеокарты для игры советую зайти
+            в YouTube и смотреть показатель FPS в необходимых вам играх
+            и делать запросы типа: ’название игры’ benchmark gpu.
+          </p>
+          <p>
+            В случае какой-то профессиональной деятельности, то посмотрите,
+            какие видеокарты советуют блогеры по этой деятельности или спросите,
+            какие видеокарты используют ваши коллеги, потому что тут разные
+            видеокарты показывают себя довольно индивидуально.
+          </p>
+        </div>
+
+
+        <!-- 7. Блок питания -->
+        <div class="block" id="PowerSupply-description">
+          <h2 id="PowerSupply"><li>Блок питания (БП)</li></h2>
+          <a href="https://www.google.com/search?q=%D0%B1%D0%BB%D0%BE%D0%BA+%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F+%D0%BF%D0%BA&tbm=isch&ved=2ahUKEwjKwaitk8T6AhVJmIsKHZY8AR0Q2-cCegQIABAA&oq=%D0%B1%D0%BB%D0%BE%D0%BA+%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F+%D0%BF%D0%BA&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAeEAUyBggAEB4QBTIGCAAQHhAIMgYIABAeEAgyBggAEB4QCDoECCMQJzoECAAQQ1CVAVjPBmD2B2gAcAB4AIABOogB4wGSAQE0mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=puE6Y8rWK8mwrgSW-YToAQ&bih=937&biw=1920&rlz=1C1CHZN_ruRU991RU992"
+             target="_blank">
+            <img src="img_PCGuide/PowerSupplyEXP.jpg"
+                 title="Блок питания для ПК"
+                 alt="Блок питания для ПК">
+          </a> <!-- 774 404 -->
+          <p>
+            Ну и закончить нам нужно блоком питания. Не нужно много думать,
+            чтобы понять, что блок питания… подает питание на ПК…
+          </p>
+          <p>
+            Собственно, на этом можно было бы закончить, но не совсем. У блоков
+            питания есть 3 основные проблемы, которые мы должны учитывать, а именно:
+          </p>
+          <ol type="A">
+            <li><b>Максимальное</b> количество питания, которое он сможет подать на ПК</li>
+            <li>Размер блока питания относительно корпуса, в который мы его помещаем</li>
+            <li>Установленный стандарт эффективности</li>
+          </ol>
+          <p>
+            Из всех этих проблем малейшие усилия и действия от вас требуется только
+            по пункту А. Давайте кратко пройдемся по каждой из проблем:
+          </p>
+          <ol type="A">
+            <li>
+              <p>
+                Чтобы корректно <u>рассчитать <b>количество питания</b>, которое
+                БП должен подать на ПК</u> нам достаточно лишь аккуратно
+                воспользоваться одним из многочисленных калькуляторов
+                в интернете.
+              </p>
+              <p>
+                Лично от себя могу посоветовать калькулятор от XCOM-SHOP
+                <a href="https://www.xcom-shop.ru/pages/configurator/powersupply/">
+                  по ссылке</a>
+              </p>
+              <p>
+                После расстановки всех выбранных комплектующих выглядит это примерно так:
+              </p>
+
+              <a href="https://www.xcom-shop.ru/pages/configurator/powersupply/"
+                 target="_blank">
+                <img src="img_PCGuide/PowerCalculator.png"
+                     title="Вычисление необходимой нам мощность БП"
+                     alt="Вычисление необходимой нам мощность БП">
+              </a> <!-- 1307 750 -->
+              <p>
+                Как мы видим, расставив комплектующие по параметрам, которые
+                мы разбирали ранее, на данном примере мы получили Расчетную
+                мощность БП равную 714.5 Вт. Естественно если в будущем вы
+                еще и захотите «разгонять» комплектующие (делать их быстрее,
+                но за бóльшую мощность и перегрев, который необходимо будет
+                компенсировать более мощным охлаждением), то надо взять немного
+                с запасом. Но в целом на данном этапе нам пока хватит найти БП
+                с мощностью в 750 Вт.
+              </p>
+            </li>
+            <li>
+              <p>
+                С <b>размером</b> все проще, просто <u>сверяем его с
+                размером</u>, указанном в характеристиках <u>корпуса</u>,
+                который <a href="#Case">мы выбирали ранее</a>.
+              </p>
+              <img src="img_PCGuide/PowerSupply-FormFacktor-filter.png"
+                   class="filter_pic"
+                   title="Выставляем фильтр форм-фактора БП в интернет-магазине"
+                   alt="Выставляем фильтр форм-фактора БП в интернет-магазине"> <!-- 208 117 -->
+              <p>
+                Также, <u><b>не забудьте</b> сверить типом подключения с материнской
+                платой</u>, <a href="#Motherboard">выбранной ранее</a>.
+              </p>
+              <img src="img_PCGuide/PowerSupplyMotherboardType.png"
+                   class="filter_pic"
+                   title="Выставляем фильтр Типа разъема для материнской платы у БП в интернет-магазине"
+                   alt="Выставляем фильтр Типа разъема для материнской платы у БП в интернет-магазине"> <!-- 246 154 -->
+            </li>
+            <li>
+              <p>
+                По поводу установленного <b>стандарта эффективности</b>… Если вы
+                читаете данную статью, то <u>вы не хотите знать об этом</u> и без
+                этого знания вам будет житься отлично и ПК вы спокойно соберете.
+                Просто поставьте в фильтрах “80 PLUS GOLD” в интернет-магазине,
+                при выборе БП и абсолютно никаких проблем у вас никаких не будет.
+              </p>
+              <img src="img_PCGuide/PowerSupply80PLUS.png"
+                   class="filter_pic"
+                   title="Выставляем фильтр Стандарта эффективности у БП в интернет-магазине"
+                   alt="Выставляем фильтр Стандарта эффективности у БП в интернет-магазине"> <!-- 222 197 -->
+              <p>
+                Если же вам так не терпится узнать об этом подробнее прошу внимания
+                на это <a href="https://ichip.ru/obzory/komplektuyushchie/chto-takoe-sertifikat-80-plus-736102"
+                          target="_blank">
+                кратенькую статью</a>.
+              </p>
+              <p>
+                На этом с блоками питания все и в целом, тоже никаких сложностей.
+              </p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="block" id="Phys-description">
+          <h2 id="KOMPUKTERVid">Физическая/конечная сборка</h2>
+          <p>
+            Вот мы и спроектировали наш будущий ПК. Теперь осталось только купить
+            все комплектующие и собрать его. Когда все комплектующие уже
+            будут у нас на руках, пора приступать к самой физической сборке.
+            <a href="https://youtu.be/hr-siRhvApM" target="_blank">
+              Лучший гайд по физической сборке комплектующих ПК здесь</a>
+          </p>
+        </div>
+      </ol>
+    </article>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="contacts">
+    <address>
+      <ul>
+        <li><a href="tel:+79161192555">Телефон: +7 (916) 119-25-55</a></li>
+        <li><a href="mailto:and.kyz.mir@gmail.com"
+               target="_blank">Почта: and.kyz.mir@gmail.com</a></li>
+        <li><a href="https://github.com/BadHard101"
+               target="_blank">GitHub: BadHard101 </a></li>
+      </ul>
+    </address>
+  </div>
+
+  <div class="social_buttons">
+    <button class="btn">
+      <a target="_blank" href="https://vk.com/kyznecov_andrey"><img src="img_social/vk_icon.png" alt="telegram.png"></a>
+    </button>
+    <button class="btn">
+      <a target="_blank" href="https://t.me/b4dhard"><img src="img_social/telegram_icon.png" alt="telegram.png"></a>
+    </button>
+    <button class="btn">
+      <a target="_blank" href="https://discordapp.com/users/158293046843146241/"><img src="img_social/discord_icon.png" alt="discord.png"></a>
+    </button>
+    <button class="btn">
+      <a target="_blank" href="https://github.com/BadHard101"><img src="img_social/github_icon.png" alt="github.png"></a>
+    </button>
+  </div>
+
+  <div class="footer_info">
+    <h4>Кузнецов Андрей Александрович</h4>
+    <h4>МИРЭА Группа: ИКБО-01-21</h4>
+    <h5>©️ Все права защищены</h5>
+  </div>
+</footer>
+</body>
+</html>

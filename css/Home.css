@@ -170,67 +170,72 @@ a {
 }
 
 
-/*
-.i1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
+.square1 {
+    position: absolute;
+    width: 10px;
+    top: 14%;
+    right: 15%;
+    animation: login-square1 60s linear infinite alternate;
 }
-.i1 > img {
-    width: 20%;
+@keyframes login-square1 {
+    from{
+        height: 1%;
+    }
+    50% {
+        height: 198%;
+    }
+    to{
+        height: 1%;
+    }
 }
-.i2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
+
+.square2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    animation: login-square2 15s linear infinite alternate;
 }
-.i2 > img {
-    width: 40%;
+@keyframes login-square2 {
+    from{
+        top: 14%;
+        left: 9%;
+    }
+    50%{
+        top: 67%;
+        left: 9%;
+    }
+    to{
+        top: 67%;
+        left: 35.7%;
+    }
 }
-.i3 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
+
+.square3 {
+    position: absolute;
+    z-index: 0;
+    width: 40px;
+    height: 40px;
+    top: 175.5%;
+    left: 39.8%;
+    animation: login-square3 15s linear infinite alternate;
 }
-.i3 > img {
-    width: 40%;
+@keyframes login-square3 {
+    from{
+        top: 175.5%;
+        left: 80.5%;
+    }
+    70%{
+        top: 175.5%;
+        left: 39.8%;
+    }
+    to{
+        top: 134.5%;
+        left: 39.8%;
+    }
 }
-.i4 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
+
+.square1, .square2, .square3 {
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(185, 49, 126, 0.34);
 }
-.i4 > img {
-    width: 50%;
-}
-.i5 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.i5 > img {
-    width: 40%;
-}
-.i6 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.i6 > img {
-    width: 40%;
-}
-.i7 {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.i7 > img {
-    width: 10%;
-}*/
