@@ -20,6 +20,14 @@ main > article > section > h1 {
     height: 100%;
 }
 
+.ontop_button {
+    z-index: 10;
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    display: none;
+}
+
 /* Start aside menu*/
 aside {
     color: floralwhite;
@@ -92,6 +100,9 @@ img {
     aside {
         display: none;
     }
+    .ontop_button {
+        display: inherit;
+    }
     article > .block {
         margin: 2em;
     }
@@ -108,10 +119,7 @@ img {
     }
     ol .block {
         border-radius: 20px;
-        margin-top: 0.3em;
-        margin-bottom: 0.3em;
-        margin-left: -1.8em;
-        margin-right: 0.5em;
+        margin: 0.3em 0.5em 0.3em -1.8em;
         padding-left: 2.5em;
         padding-right: 1em;
     }
