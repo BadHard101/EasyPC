@@ -5,7 +5,7 @@ body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
     font-size: 17px;
-    color: black;
+    background-color: whitesmoke;
 }
 
 /* Start header */
@@ -165,6 +165,7 @@ li > a:only-child:after { content: ''; }*/
 
 /* Start footer */
 .footer {
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-around;
