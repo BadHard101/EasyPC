@@ -436,6 +436,9 @@ li > a:only-child:after { content: ''; }*/
     .m-menu__toggle {
         margin-left: 20px;
     }
+    .t1 {
+        margin-top: 20px;
+    }
 }
 @media (max-width: 1030px) {
     .contacts {
@@ -512,7 +515,7 @@ li > a:only-child:after { content: ''; }*/
 }
 .burger_menu .m-menu__header {
     padding: 0 16px;
-    height: 81px;
+    height: 97px;
     display: -ms-flexbox;
     display: -webkit-box;
     display: -webkit-flex;
