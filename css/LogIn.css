@@ -77,7 +77,6 @@ h1, h2, h3, h4, h5, h6 {
         margin: 1em;
     }
     .main div img {
-        margin-top: -8em;
-        visibility: hidden;
+        margin-top: -5em;
     }
 }
