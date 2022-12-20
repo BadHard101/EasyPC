@@ -84,6 +84,7 @@ const services = [
         Speed: "1600"
     }
 ]
+amount_of_elems = 11;
 /* конец ПАРАМЕТРЫ СОЗДАННЫХ ТОВАРОВ */
 
 
@@ -280,7 +281,13 @@ function filter_by_id(element) {
 
 /* конец ПРОВЕРКА НА ОСТАЛЬНЫЕ НЕИЗМЕНЕННЫЕ ФИЛЬТРЫ */
 
-
+//проверка на наличие товаров, соответствующих текущим фильтрам
+function no_prods_check() {
+    const hidden_elements = document.querySelectorAll('.hidden');
+    console.log(hidden_elements.length);
+    if (hidden_elements.length === amount_of_elems) No_prods.style.display = "flex";
+    else No_prods.style.display = "none";
+}
 
 
 
@@ -301,8 +308,7 @@ function filter_calculate() {
         }
     });
     //если нет таких товаров, то выводим сообщение об этом
-    if (answer.length === 0) No_prods.style.display = "flex";
-    else No_prods.style.display = "none";
+    no_prods_check();
 }
 
 //реакция на изменение фильтра минимальной стоимости
@@ -338,8 +344,7 @@ function setFilterListener(e) {
     filter_calculate();
 
     //если нет таких товаров, то выводим сообщение об этом
-    if (answer.length === 0) No_prods.style.display = "flex";
-    else No_prods.style.display = "none";
+    no_prods_check();
 }
 
 Manufacture_checkboxes.forEach(checkbox => {
