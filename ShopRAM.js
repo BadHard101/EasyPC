@@ -84,7 +84,6 @@ const services = [
         Speed: "1600"
     }
 ]
-amount_of_elems = 11;
 /* конец ПАРАМЕТРЫ СОЗДАННЫХ ТОВАРОВ */
 
 
@@ -282,6 +281,8 @@ function filter_by_id(element) {
 /* конец ПРОВЕРКА НА ОСТАЛЬНЫЕ НЕИЗМЕНЕННЫЕ ФИЛЬТРЫ */
 
 //проверка на наличие товаров, соответствующих текущим фильтрам
+let amount_of_elems = services.length + 1; // один является примерочным без информации
+console.log(amount_of_elems);
 function no_prods_check() {
     const hidden_elements = document.querySelectorAll('.hidden');
     console.log(hidden_elements.length);
