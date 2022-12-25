@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.65">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>EasyPC Регистрация</title>
+    <title>EasyPC Связаться</title>
     <link rel="icon" type="image/png" href="img_PCGuide/favicon.png">
     <link rel="stylesheet" href="css/default.css" type="text/css">
-    <link rel="stylesheet" href="css/Registration.css" type="text/css">
+    <link rel="stylesheet" href="css/Contacts.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;500&display=swap" rel="stylesheet">
@@ -200,7 +200,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="./PCguide.html">Гайд</a></li>
+                <li><a>Гайд</a></li>
                 <li><a href="./Contacts.html">Связаться</a></li>
             </ul>
         </nav>
@@ -219,30 +219,93 @@
 
 <div class="wrapper">
     <main class="main">
-        <div id="reg_label">
-            <img id="pc_logo" src="img_PCGuide/favicon_small.png" alt = "PC_Logo">
-            <h1>Регистрация</h1>
+        <div class="info_container">
+            <div class="bh_author">
+                <img src="img_Contacts/ava.jpg">
+                <div class="card">
+                    <div class="front" id="bh_author__text">
+                        <h3 class="card-title">Автор: BadHard</h3>
+                        <p><b>ФИО:</b> Кузнецов Андрей Александрович<br><b>ВУЗ:</b> ИИТ РТУ МИРЭА<br><b>Группа:</b> ИКБО-01-21</p>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </div>
+
+            <div class="card" id="bh_contacts__text1">
+                <div class="front">
+                    <div class="bh_contacts">
+                        <h3>Контакты:</h3>
+                        <ul>
+                            <li><a href="mailto:and.kyz.mir@gmail.com"
+                                   target="_blank"><b>Mail:</b> and.kyz.mir@gmail.com</a></li>
+                            <li><a href="tel:+79161192555"><b>Phone:</b> +7 (916) 119-25-55</a></li>
+                            <li><a href="https://vk.com/kyznecov_andrey"
+                                   target="_blank"><b>VK:</b> Кузнецов Андрей</a></li>
+                            <li><a href="https://github.com/BadHard101"
+                                   target="_blank"><b>GitHub:</b> BadHard101</a></li>
+                            <li><a href="https://t.me/b4dhard"
+                                   target="_blank"><b>Telegram:</b> BadHard</a></li>
+                            <li><a href="https://discordapp.com/users/158293046843146241/"
+                                   target="_blank"><b>Discord:</b> BadHard</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bh_address">
+                        <h3>Адрес:</h3>
+                        <ul>
+                            <li><b>Город:</b> Москва</li>
+                            <li><b>Улица:</b> пр. Вернадского д. 78</li>
+                            <li><b>Индекс:</b> 119454</li>
+                        </ul>
+                    </div>
+                    <!--<a href="./Registration.html">Регистрация</a>-->
+                </div>
+                <div class="back1"></div>
+            </div>
+
+            <div id="bh_contacts__text2">
+                <div class="card">
+                    <div class="front">
+                        <div class="bh_contacts">
+                            <h3>Контакты:</h3>
+                            <ul>
+                                <li><a href="mailto:and.kyz.mir@gmail.com"
+                                       target="_blank"><b>Mail:</b> and.kyz.mir@gmail.com</a></li>
+                                <li><a href="tel:+79161192555"><b>Phone:</b> +7 (916) 119-25-55</a></li>
+                                <li><a href="https://vk.com/kyznecov_andrey"
+                                       target="_blank"><b>VK:</b> Кузнецов Андрей</a></li>
+                                <li><a href="https://github.com/BadHard101"
+                                       target="_blank"><b>GitHub:</b> BadHard101</a></li>
+                                <li><a href="https://t.me/b4dhard"
+                                       target="_blank"><b>Telegram:</b> BadHard</a></li>
+                                <li><a href="https://discordapp.com/users/158293046843146241/"
+                                       target="_blank"><b>Discord:</b> BadHard</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="back1"></div>
+                </div>
+
+                <div class="card">
+                    <div class="front">
+                        <div class="bh_address">
+                            <h3>Адрес:</h3>
+                            <ul>
+                                <li><b>Город:</b> Москва</li>
+                                <li><b>Улица:</b> пр. Вернадского д. 78</li>
+                                <li><b>Индекс:</b> 119454</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="back2"></div>
+                </div>
+            </div>
+
         </div>
-        <div id="reg_data">
-            <form id="login_data_form" action="" method="get">
-                <p>
-                    <label class="text-field__label" for="login">Логин:</label>
-                    <input class="text-field__input" placeholder="Login" type="text" name="login" id="login" required>
-                </p>
-                <p>
-                    <label class="text-field__label" for="email">Email:</label>
-                    <input class="text-field__input" placeholder="Email" type="email" name="email" id="email" required>
-                </p>
-                <p>
-                    <label class="text-field__label" for="tel">Телефон:</label>
-                    <input class="text-field__input" placeholder="Number" type="tel" name="tel" id="tel" required>
-                </p>
-                <p>
-                    <label class="text-field__label" for="password">Пароль:</label>
-                    <input class="text-field__input" placeholder="Password" type="password" name="password" id="password" required>
-                </p>
-                <button class="Reg_btn" type="submit">Подтвердить</button>
-            </form>
+
+
+        <div class="address_map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add7c407c3e752ca5e2b50bdbc4032e6359b2d875844eabf59ed47f153e59531a&amp;width=435&amp;height=443&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
 
     </main>
