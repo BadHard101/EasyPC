@@ -1,6 +1,10 @@
 h3 {
     margin: 0 1em;
 }
+main {
+    background-color: whitesmoke;
+    padding: 1em 0;
+}
 
 .block li {
     margin-bottom: 1em;
@@ -17,7 +21,6 @@ main > article > section > h1 {
 .wrapper_guide {
     position: relative;
     height: 100%;
-    margin-bottom: 1em;
 }
 
 .ontop_button {
