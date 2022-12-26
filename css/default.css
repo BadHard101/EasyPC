@@ -431,8 +431,6 @@ li > a:only-child:after { content: ''; }*/
     .contacts {
         display: none;
     }
-    .burger_menu {
-    }
     .m-menu__toggle {
         margin-left: 20px;
     }
